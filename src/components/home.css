@@ -1,0 +1,521 @@
+.home {
+  display: flex;
+  flex-direction: column;
+}
+
+.top-image-container {
+  position: static;
+  text-align: center;
+  color: black;
+  width: 100%;
+  height: 100%;
+}
+
+.top-image-container img {
+  border-radius: 50px;
+  object-fit: cover;
+}
+
+ .text-overlay {
+  position: absolute;
+  top: max(550px, 10%); 
+  left: max(450px, 10%);
+  text-align: center;
+}
+
+.text-overlay h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 50px;
+  color: black;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7);
+  animation: colorFade 5s ease-in-out infinite;
+}
+
+@keyframes colorFade {
+  0%, 100% {
+    color: #3e2723; /* very dark coffee brown */
+  }
+  50% {
+    color: #5d4037; /* medium-dark roast brown */
+  }
+}
+
+
+.intro-text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 80px 50px 20px 50px;
+  padding: 10px 200px 10px 200px;
+}
+
+.intro-text p {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 30px;
+  color: black;
+  font-weight: 500;
+}
+
+.intro-history-section {
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke;
+  border-radius: 50px;
+  text-align: center;
+  padding: 50px;
+  margin: 100px;
+  margin-bottom: 25px;
+}
+
+.intro-history-section h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 50px;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.intro-history-section p {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 25px;
+  color: black;
+  font-weight: 500;
+  margin: 15px;
+  padding: 20px;
+}
+
+.learn-more-button {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  color: white;
+  background-color: #6f4e37; 
+  border: none;
+  border-radius: 30px;
+  padding: 15px 30px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: 20px;
+}
+
+.coffee-varieties-section {
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    border-radius: 50px;
+    text-align: center;
+    padding: 50px;
+    margin: 100px;
+    margin-bottom: 25px;
+}
+
+.coffee-varieties-section h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 50px;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.coffee-varieties-section img {
+  width: 500px;
+  height: 300px;
+  border-radius: 20px;
+  margin: 15px;
+}
+
+.coffee-varieties-section ul {
+  list-style-type: disc;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 15px;
+  padding: 25px;
+  border-radius: 50px;
+}
+
+.coffee-varieties-section ul li {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 25px;
+  color: black;
+  font-weight: 500;
+}
+
+/* .first-section {
+  display: flex;
+  flex-direction: row;
+  background-color: whitesmoke;
+  border-radius: 50px;
+  padding: 50px;
+  margin: 100px;
+  margin-bottom: 25px;
+}
+
+.coffeeTree-img-container {
+  width: 100%;
+  margin: 15px;
+}
+
+.coffeeTree-img-container:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
+
+.coffeeTree-img-container img {
+  border-radius: 50px;
+}
+
+.coffee-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 15px;
+  padding: 25px;
+  border-radius: 50px;
+  background-color: #d2b48c;
+}
+
+.coffee-info:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
+
+.coffee-info p {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  color: black;
+  font-weight: 500;
+}
+
+.second-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #eee;
+  border-radius: 50px;
+  padding: 50px;
+  margin: 100px;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+.second-section h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 50px;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.second-section ul {
+  list-style-type: disc;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 15px;
+  padding: 25px;
+  border-radius: 50px;
+}
+.second-section ul li {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 25px;
+  color: black;
+  font-weight: 500;
+}
+
+.second-section ul li:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
+
+.third-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  margin: 100px;
+  margin-top: 20px;
+}
+
+.third-section h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 50px;
+  color: black;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.third-section p {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 25px;
+  color: black;
+  font-weight: 500;
+  text-align: center;
+  margin: 15px;
+  padding: 20px;
+  max-width: 800px;
+}
+
+.coffeeInside-img-container {
+  width: 100%;
+  margin: 15px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.coffeeInside-img-container img {
+  border-radius: 50px;
+  max-width: 800px;
+}
+
+.coffeeInside-img-container:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
+
+.coffeeInside-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 15px;
+  padding: 25px;
+}
+
+.coffeeInside-info ul {
+  list-style-type: disc;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 15px;
+  padding: 25px;
+  border-radius: 50px;
+}
+
+.coffeeInside-info ul li {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 25px;
+  color: black;
+  font-weight: 500;
+}
+
+.coffeeInside-info ul li:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+} */
+
+
+/* Mobile devices (portrait and landscape) */
+@media screen and (max-width: 767px) {
+
+    .home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .top-image-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+
+    .top-image-container img {
+        margin: 0 auto;
+        display: block;
+        max-width: 90vw;
+        height: auto;
+    }
+
+    .text-overlay {
+        position: static;
+        margin: 20px auto 0 auto;
+        left: 0;
+        top: 0;
+        width: 100%;
+        text-align: center;
+        transform: none;
+    }
+
+    .text-overlay h1 {
+        font-size: 32px;
+    }
+
+    .intro-text {
+        align-items: center;
+        justify-content: center;
+        margin: 30px 5px 20px 5px;
+        padding: 10px 5px;
+        width: 100%;
+    }
+
+    .intro-history-section,
+    .coffee-varieties-section {
+        margin: 30px 5px 20px 5px;
+        padding: 20px 5px;
+        border-radius: 30px;
+    }
+
+    .coffee-varieties-section img {
+        width: 90vw;
+        height: auto;
+        max-width: 100%;
+    }
+}
+
+/* .top-image-container {
+  position: static;
+  text-align: center;
+  color: black;
+  width: 100%;
+  height: 100%;
+}
+
+.top-image-container img {
+  border-radius: 50px;
+  object-fit: cover;
+}
+
+ .text-overlay {
+  position: absolute;
+  top: max(480px, 10%); 
+  left: max(50px, 10%);
+  text-align: center;
+}
+
+.text-overlay h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 60px;
+  color: black;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7);
+  animation: colorFade 5s ease-in-out infinite;
+}
+
+@keyframes colorFade {
+  0%, 100% {
+    color: #3e2723; 
+  }
+  50% {
+    color: #5d4037; 
+  }
+}
+
+
+.intro-text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 50px 10px 20px 10px;
+    padding: 10px 10px;
+}
+
+.intro-text p {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 30px;
+    color: black;
+    font-weight: 500;
+}
+
+.intro-history-section {
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke;
+  border-radius: 50px;
+  text-align: center;
+  padding: 50px;
+  margin: 100px;
+  margin-bottom: 25px;
+}
+
+.intro-history-section h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 50px;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.intro-history-section p {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 25px;
+  color: black;
+  font-weight: 500;
+  margin: 15px;
+  padding: 20px;
+}
+
+.learn-more-button {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  color: white;
+  background-color: #6f4e37; 
+  border: none;
+  border-radius: 30px;
+  padding: 15px 30px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: 20px;
+}
+
+.coffee-varieties-section {
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    border-radius: 50px;
+    text-align: center;
+    padding: 50px;
+    margin: 100px;
+    margin-bottom: 25px;
+}
+
+.coffee-varieties-section h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 50px;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.coffee-varieties-section img {
+  width: 500px;
+  height: 300px;
+  border-radius: 20px;
+  margin: 15px;
+}
+
+.coffee-varieties-section ul {
+  list-style-type: disc;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 15px;
+  padding: 25px;
+  border-radius: 50px;
+}
+
+.coffee-varieties-section ul li {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 25px;
+  color: black;
+  font-weight: 500;
+} 
+
+ } */
+
+/* Tablets (portrait and landscape) and small desktops */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* Styles for tablets and small desktops */
+}
+
+/* Desktops and larger screens */
+@media screen and (min-width: 1024px) {
+  /* Styles for desktops and larger screens */
+}
