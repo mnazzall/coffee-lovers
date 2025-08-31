@@ -25,7 +25,7 @@ function Header() {
   return (
     <header className="header">
       <div className="logo-container">
-        <span className="logo"><img src="photos/logo.png" alt="coffee logo" /></span>
+  <span className="logo"><img src="/coffee-lovers/photos/logo.png" alt="coffee logo" /></span>
         <span className="logo-name">Coffee Lovers</span>
       </div>
       <div className="hamburger" onClick={handleHamburgerClick}>

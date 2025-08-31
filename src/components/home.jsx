@@ -8,7 +8,7 @@ function Home() {
       <div className="top-image-container">
         <img
           className="home-img"
-          src="/photos/coffeeToWrite.jpeg"
+          src="/coffee-lovers/photos/coffeeToWrite.jpeg"
           alt="Coffee Beans"
         />
         <div className="text-overlay">
@@ -44,7 +44,7 @@ function Home() {
       </div>
       <div className="coffee-varieties-section">
         <h1>Coffee Varieties & Botany</h1>
-        <div><img src="/photos/ArabicaAndRobusta.jpeg" alt="Arabica and Robusta Coffee Beans" /></div>
+  <div><img src="/coffee-lovers/photos/ArabicaAndRobusta.jpeg" alt="Arabica and Robusta Coffee Beans" /></div>
         <ul>
           <li>
             Arabica is valued for its smoother, sweeter, more aromatic profile
@@ -62,7 +62,7 @@ function Home() {
      
       {/* <div className="first-section">
         <div className="coffeeTree-img-container">
-          <img src="/photos/CoffeeTree.jpeg" alt="Coffee Tree" />
+          <img src="/coffee-lovers/photos/CoffeeTree.jpeg" alt="Coffee Tree" />
         </div>
         <div className="coffee-info">
           <h1>What is coffee made of? Meet the coffee tree.</h1>
@@ -117,7 +117,7 @@ function Home() {
           </p>
         </div>
         <div className="coffeeInside-img-container">
-          <img src="/photos/coffeeInside.jpeg" alt="Coffee Cherry Diagram" />
+          <img src="/coffee-lovers/photos/coffeeInside.jpeg" alt="Coffee Cherry Diagram" />
         </div>
         <div className="coffeeInside-info">
           <ul>
