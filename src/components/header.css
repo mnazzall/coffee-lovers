@@ -1,4 +1,4 @@
-header {
+.header {
   display: flex;
   flex-direction: row;
   position: sticky;
@@ -78,75 +78,43 @@ header {
 
 
 @media (max-width: 768px) {
-   /* .navLinks {
-    display: none;
-    flex-direction: column;
-    background: #faebd7;
-    position: absolute;
-    top: 70px;
-    right: 20px;
-    width: 80vw;
-    max-width: 300px;
-    border-radius: 20px;
-    box-shadow: 0 8px 24px 0 rgba(0,0,0,0.18);
-    padding: 25px 0 25px 0;
-    z-index: 1001;
-    transition: opacity 0.3s, transform 0.3s;
-    opacity: 0;
-    pointer-events: none;
-    transform: translateY(-10px);
-  }
 
-  .navLinks.active {
-    display: flex;
-    opacity: 1;
-    pointer-events: auto;
-    transform: translateY(0);
-  }
+  .header {
+  display: flex;
+  flex-direction: row;
+  position: sticky;
+  top: 5px;
+  background-color: #faebd7;
+  border-radius: 50px;
+  margin: 30px;
+  padding: 8px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
 
-  .nav-list {
-    flex-direction: column;
-    gap: 18px;
-    align-items: flex-start;
-    padding-left: 30px;
-  }
 
-  .nav-list li {
-    width: 100%;
-    text-align: left;
-    background: none;
-    padding: 10px 0 10px 0;
-    border-radius: 0;
-  }
+.logo-container {
+  display: flex;
+  align-items: left;
+  margin-left: 8px;
+}
 
-  .nav-list li a {
-    font-size: 20px;
-    color: #6b4f27;
-    padding: 8px 0;
-    display: block;
-    width: 100%;
-  } 
+.logo {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  border: #c19a6b 2px solid;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+}
 
-  .openList {
-    display: block;
-    margin-left: auto;
-    padding-right: 30px;
-  }
-  #openListButton {
-    background: none;
-    border: none;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    padding: 10px;
-  }
-  #openListButton span {
-    width: 25px;
-    height: 3px;
-    background-color: #6b4f27;
-    border-radius: 2px;
-  } */
+.logo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.logo-name {
+  display: none;
+}
 
     .overlay {
     position: fixed;
@@ -225,25 +193,34 @@ header {
   .openList {
     display: block;
     margin-left: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     padding-right: 20px;
     z-index: 1002;
+    
+   box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
   }
 
   #openListButton {
-    background: none;
+    background: #6b4f27;
     border: none;
+    border-radius: 50px;
     cursor: pointer;
     display: flex;
     flex-direction: column;
     gap: 5px;
     padding: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 
   #openListButton span {
     width: 25px;
     height: 3px;
-    background-color: #6b4f27;
-    border-radius: 2px;
+    background-color: #faebd7;
+    border-radius: 50px;
     transition: all 0.3s ease;
   }
 
@@ -261,3 +238,16 @@ header {
 
 
 
+@media (max-width: 1024px) {
+  /* Styles for tablets and smaller laptops */
+}
+
+/* Large devices (desktops) */
+@media (max-width: 1200px) {
+  /* Styles for standard desktops */
+}
+
+/* Extra large devices (big monitors, TVs) */
+@media (min-width: 1201px) {
+  /* Styles for very large screens */
+}
