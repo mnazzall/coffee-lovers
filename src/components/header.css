@@ -148,36 +148,85 @@ header {
     border-radius: 2px;
   } */
 
-   .navLinks {
-    display: none;
+    .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    z-index: 1000;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+  }
+
+  /* Mobile dropdown menu */
+  .navLinks {
+    display: flex;
     flex-direction: column;
     background: #faebd7;
     position: absolute;
-    top: 70px;
+    top: 70px; /* drops down below header */
     right: 20px;
     width: 80vw;
     max-width: 300px;
     border-radius: 20px;
-    box-shadow: 0 8px 24px 0 rgba(0,0,0,0.18);
-    padding: 25px 0;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+    padding: 25px 20px;
     z-index: 1001;
-    opacity: 0;
-    transform: translateY(-10px);
-    transition: opacity 0.3s, transform 0.3s;
-    pointer-events: none;
-  } 
 
+    /* hidden by default */
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-15px);
+    transition: all 0.3s ease-in-out;
+  }
+
+  /* Active dropdown (open state) */
   .navLinks.active {
-    display: flex;
     opacity: 1;
     transform: translateY(0);
     pointer-events: auto;
   }
 
+  /* Close button inside dropdown */
+  .close-btn {
+    background: none;
+    border: none;
+    font-size: 26px;
+    color: #6b4f27;
+    cursor: pointer;
+    margin-left: auto;
+    margin-bottom: 15px;
+  }
+
+  /* Stack nav items vertically */
+  .nav-list {
+    flex-direction: column;
+    gap: 18px;
+    align-items: flex-start;
+  }
+
+  .nav-list li {
+    width: 100%;
+    padding: 10px 0;
+    background: none;
+    border-radius: 0;
+  }
+
+  .nav-list li a {
+    font-size: 20px;
+    color: #6b4f27;
+    display: block;
+    width: 100%;
+  }
+
+  /* Hamburger button */
   .openList {
     display: block;
     margin-left: auto;
-    padding-right: 30px;
+    padding-right: 20px;
+    z-index: 1002;
   }
 
   #openListButton {
@@ -195,9 +244,19 @@ header {
     height: 3px;
     background-color: #6b4f27;
     border-radius: 2px;
+    transition: all 0.3s ease;
   }
 
- 
+  /* Animate hamburger → X */
+  #openListButton.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  #openListButton.active span:nth-child(2) {
+    opacity: 0;
+  }
+  #openListButton.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+  }
 }
 
 

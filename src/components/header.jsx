@@ -8,6 +8,10 @@ function Header() {
   function toggleNav() {
     setIsOpen(!isOpen);
   }
+
+  function closeNav() {
+    setIsOpen(false);
+  }
   
   return (
     <header className="header">
@@ -15,6 +19,8 @@ function Header() {
         <span className="logo"><img src="/coffee-lovers/photos/logo.png" alt="coffee logo" /></span>
         <span className="logo-name">Coffee Lovers</span>
       </div>
+
+
       <div className="openList">
           <button id="openListButton" onClick={toggleNav}>
             <span></span>
@@ -22,8 +28,12 @@ function Header() {
             <span></span>
           </button>
         </div>
-      <div className="navLinks">
+
+
+             {isOpen && <div className="overlay" onClick={closeNav}></div>}
+
         <nav className={`navLinks ${isOpen ? "active" : ""}`}>
+          <button className="close-btn" onClick={closeNav}>✕</button>
           <ul className="nav-list">
             <li>
               <Link to="/" onClick={() => setIsOpen(false)}>Home</Link>
@@ -39,7 +49,6 @@ function Header() {
             </li>
           </ul>
         </nav>
-      </div>
     </header>
   );
 }1
