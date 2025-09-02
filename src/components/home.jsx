@@ -27,12 +27,12 @@ function Home() {
       <div className="intro-history-section">
         <h1>Origins & Early History</h1>
         <p>
-          Coffee has its roots in the Ethiopian Highlands—specifically the
-          region historically known as Kaffa—dating as far back as the 9th
+          Coffee has its roots in the Ethiopian Highlands-specifically the
+          region historically known as Kaffa-dating as far back as the 9th
           century, where legend tells of a goat herder, Kaldi, who observed his
           goats becoming unusually energetic after eating coffee cherries.
-        </p>
-        <p>
+          <br/>
+          <br/>
           By the 15th century, coffee cultivation and consumption had spread to
           Yemen, flourishing in Sufi monasteries. From there, it traveled across
           the Middle East, reaching Europe by the 16th and 17th centuries via

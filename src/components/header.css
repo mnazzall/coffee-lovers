@@ -77,6 +77,15 @@
 }
 
 
+.openList {
+  opacity: 0;
+}
+
+.close-btn{
+  opacity: 0;
+}
+
+
 @media (max-width: 768px) {
 
   .header {
@@ -128,36 +137,34 @@
     transition: opacity 0.3s ease;
   }
 
-  /* Mobile dropdown menu */
+
   .navLinks {
     display: flex;
     flex-direction: column;
     background: #faebd7;
     position: absolute;
-    top: 70px; /* drops down below header */
-    right: 20px;
-    width: 80vw;
+    top: 75px; 
+    right: 10px;
+    width: 60vw;
     max-width: 300px;
-    border-radius: 20px;
+    border-radius: 50px;
     box-shadow: 0 8px 24px rgba(0,0,0,0.18);
     padding: 25px 20px;
     z-index: 1001;
-
-    /* hidden by default */
     opacity: 0;
     pointer-events: none;
     transform: translateY(-15px);
     transition: all 0.3s ease-in-out;
   }
 
-  /* Active dropdown (open state) */
+
   .navLinks.active {
     opacity: 1;
     transform: translateY(0);
     pointer-events: auto;
   }
 
-  /* Close button inside dropdown */
+
   .close-btn {
     background: none;
     border: none;
@@ -165,10 +172,12 @@
     color: #6b4f27;
     cursor: pointer;
     margin-left: auto;
+    margin-right: 10px;
     margin-bottom: 15px;
+    opacity: 1;
   }
 
-  /* Stack nav items vertically */
+
   .nav-list {
     flex-direction: column;
     gap: 18px;
@@ -189,17 +198,16 @@
     width: 100%;
   }
 
-  /* Hamburger button */
+
   .openList {
-    display: block;
+    display: flex;
     margin-left: auto;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding-right: 20px;
+    padding-right: 10px;
     z-index: 1002;
-    
-   box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+    opacity: 1;
   }
 
   #openListButton {
@@ -211,9 +219,6 @@
     flex-direction: column;
     gap: 5px;
     padding: 10px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
   }
 
   #openListButton span {
@@ -224,7 +229,7 @@
     transition: all 0.3s ease;
   }
 
-  /* Animate hamburger → X */
+ 
   #openListButton.active span:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
   }
@@ -242,12 +247,12 @@
   /* Styles for tablets and smaller laptops */
 }
 
-/* Large devices (desktops) */
+
 @media (max-width: 1200px) {
   /* Styles for standard desktops */
 }
 
-/* Extra large devices (big monitors, TVs) */
+
 @media (min-width: 1201px) {
   /* Styles for very large screens */
 }
