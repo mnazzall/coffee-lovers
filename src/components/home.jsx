@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import "./home.css";
 
@@ -61,23 +61,69 @@ const categories = [
   },
 ];
 
+const images = [
+  "/coffee-lovers/photos/G1.jpeg",
+  "/coffee-lovers/photos/G2.jpeg",
+  "/coffee-lovers/photos/G3.jpeg",
+  "/coffee-lovers/photos/G4.jpeg",  
+  "/coffee-lovers/photos/G5.jpeg",
+  "/coffee-lovers/photos/G6.jpeg",
+  "/coffee-lovers/photos/G7.jpeg",
+  "/coffee-lovers/photos/G8.jpeg",
+  "/coffee-lovers/photos/G9.jpeg",
+  "/coffee-lovers/photos/G10.jpeg",
+];
+
 function Home() {
   const [offset, setOffset] = useState(0);
-  const cardWidth = 250; // width + margin of each card
-  //const visibleCards = 3; // number of cards visible at once
+  const [cardWidth, setCardWidth] = useState(0);
+  const cardRef = useRef(null);
+  const [current, setCurrent] = useState(0);
 
-  // Auto-move every 3 seconds
+  useEffect(() => {
+    const updateWidth = () => {
+      if (cardRef.current) {
+        setCardWidth(cardRef.current.offsetWidth + 20); // card width + margin
+      }
+    };
+    updateWidth();
+    window.addEventListener("resize", updateWidth);
+    return () => window.removeEventListener("resize", updateWidth);
+  }, []);
+
   useEffect(() => {
     const interval = setInterval(() => {
-      setOffset((prev) => (prev + 1 >= categories.length ? 0 : prev + 1));
+      setOffset((prev) => (prev + 1) % categories.length);
     }, 3000);
     return () => clearInterval(interval);
   }, []);
 
   const prevSlide = () =>
     setOffset((prev) => (prev - 1 < 0 ? categories.length - 1 : prev - 1));
-  const nextSlide = () =>
-    setOffset((prev) => (prev + 1 >= categories.length ? 0 : prev + 1));
+  const nextSlide = () => setOffset((prev) => (prev + 1) % categories.length);
+
+  useEffect(() => {
+    if (cardRef.current) {
+      setCardWidth(cardRef.current.offsetWidth + 20);
+    }
+
+    const handleResize = () => {
+      if (cardRef.current) {
+        setCardWidth(cardRef.current.offsetWidth + 20);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrent((prev) => (prev + 1) % images.length);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, [images.length]);
 
   return (
     <div className="home">
@@ -114,10 +160,16 @@ function Home() {
         <div className="carousel-wrapper">
           <div
             className="carousel"
-            style={{ transform: `translateX(-${offset * cardWidth}px)` }}
+            style={{
+              transform: `translateX(-${offset * cardWidth}px)`,
+            }}
           >
             {categories.concat(categories).map((cat, index) => (
-              <div className="card" key={index}>
+              <div
+                className="card"
+                ref={index === 0 ? cardRef : null}
+                key={index}
+              >
                 <img src={cat.image} alt={cat.title} />
                 <h3>{cat.title}</h3>
                 <p>{cat.description}</p>
@@ -131,6 +183,53 @@ function Home() {
         <button className="arrow right" onClick={nextSlide}>
           &#10095;
         </button>
+      </div>
+
+      <div className="intro-text">
+        <h2>Did You Know?</h2>
+        <p>
+          Did you know? Coffee was discovered in Ethiopia in the 9th century and
+          has been fueling creativity ever since.
+        </p>
+      </div>
+
+      <div className="gallery-section">
+        <h1>Gallery Preview</h1>
+
+        <div className="gallery-image-wrapper">
+          <div
+            className="gallery-img"
+            style={{
+              transform: `translateX(-${current * cardWidth}px)`,
+            }}
+          >
+            {images.concat(images).map((img, index) => (
+              <div
+                className="card-img"
+                key={index}
+                ref={index === 0 ? cardRef : null}
+              >
+                <img src={img} alt={`coffee-${index}`} />
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="dots">
+          {images.map((_, i) => (
+            <span
+              key={i}
+              className={`dot ${i === current % images.length ? "active" : ""}`}
+              onClick={() => setCurrent(i)}
+            ></span>
+          ))}
+        </div>
+
+        <div className="gallery-button-container">
+          <Link to="/gallery">
+            <button className="learn-more-button">View Full Gallery</button>
+          </Link>
+        </div>
       </div>
 
       <div className="intro-history-section">
