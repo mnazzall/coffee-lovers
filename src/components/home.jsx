@@ -63,7 +63,7 @@ const categories = [
 
 function Home() {
   const [offset, setOffset] = useState(0);
-  const cardWidth = 350; // width + margin of each card
+  const cardWidth = 250; // width + margin of each card
   //const visibleCards = 3; // number of cards visible at once
 
   // Auto-move every 3 seconds
@@ -171,7 +171,7 @@ function Home() {
         </ul>
       </div>
 
-      <div className="first-section">
+      {/* <div className="first-section">
         <div className="coffeeTree-img-container">
           <img src="/coffee-lovers/photos/CoffeeTree.jpeg" alt="Coffee Tree" />
         </div>
@@ -261,7 +261,7 @@ function Home() {
             </li>
           </ul>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
