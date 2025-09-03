@@ -4,31 +4,48 @@
 }
 
 .top-image-container {
-  position: static;
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke;
+  border-radius: 50px;
   text-align: center;
-  color: black;
-  width: 100%;
-  height: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  margin: 120px;
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+.top-image-wrapper {
+  margin-bottom: 20px;
 }
 
 .top-image-container img {
   border-radius: 50px;
-  object-fit: cover;
+  width: 880px;
+  height: 480px;
 }
 
  .text-overlay {
-  position: absolute;
-  top: max(550px, 10%); 
-  left: max(450px, 10%);
   text-align: center;
+  
 }
 
 .text-overlay h1 {
   font-family: "Times New Roman", Times, serif;
   font-size: 50px;
-  color: black;
+  color: white;
   text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7);
   animation: colorFade 5s ease-in-out infinite;
+}
+
+.text-overlay p {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 22px;
+  color: black;
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3);
+  margin-top: 10px;
 }
 
 @keyframes colorFade {
@@ -39,6 +56,148 @@
     color: #5d4037; /* medium-dark roast brown */
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+.carousel-container {
+  display: flex;
+  flex-direction: row;
+  gap: 3%;
+  background-color:#5d4037;
+  border-radius: 50px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  margin: 120px;
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+
+.carousel-wrapper {
+  overflow: hidden;
+ 
+}
+
+.carousel {
+  display: flex;
+  flex-direction: row;
+  position: static;
+  transition: transform 0.5s ease-in-out;
+}
+
+.card {
+  min-width: 100px;
+  width: 350px;
+  height: 420px;
+  margin: 10px;
+  background-color: whitesmoke;
+  border-radius: 30px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.card img {
+  width: 100%;
+  height: 50%;
+  border-radius: 30px 30px 0 0;
+  object-fit: cover; 
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.2rem;
+  color: #333;
+  margin-top: 10px;
+
+  margin-bottom: 8px;
+}
+
+.card p {
+  font-family: "Times New Roman", Times, serif;
+  color: #666;
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+}
+
+.card-button {
+  
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+  color: white;
+  background-color: #6f4e37; 
+  border: none;
+  border-radius: 30px;
+  padding: 15px 30px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: 20px; 
+}
+
+.card-button:hover {
+  transform: scale(1.05);
+  background-color: #a05a3d;
+}
+
+/* Arrows */
+.arrow {
+  top: 50%;
+  font-size: 2rem;
+  color: #333;
+  background: rgba(255, 255, 255, 0.7);
+  border: none;
+  cursor: pointer;
+  padding: 0 10px;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.left {
+  left: 10px;
+}
+
+.right {
+  right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .intro-text {
@@ -139,7 +298,7 @@
   font-weight: 500;
 }
 
-/* .first-section {
+.first-section {
   display: flex;
   flex-direction: row;
   background-color: whitesmoke;
@@ -303,10 +462,18 @@
 .coffeeInside-info ul li:hover {
   transform: scale(1.05);
   transition: all 0.3s ease-in-out;
-} */
+}
 
 
-/* Mobile devices (portrait and landscape) */
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 767px) {
 
     .home {
@@ -418,147 +585,6 @@
 
     
 }
-
-/* .top-image-container {
-  position: static;
-  text-align: center;
-  color: black;
-  width: 100%;
-  height: 100%;
-}
-
-.top-image-container img {
-  border-radius: 50px;
-  object-fit: cover;
-}
-
- .text-overlay {
-  position: absolute;
-  top: max(480px, 10%); 
-  left: max(50px, 10%);
-  text-align: center;
-}
-
-.text-overlay h1 {
-  font-family: "Times New Roman", Times, serif;
-  font-size: 60px;
-  color: black;
-  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7);
-  animation: colorFade 5s ease-in-out infinite;
-}
-
-@keyframes colorFade {
-  0%, 100% {
-    color: #3e2723; 
-  }
-  50% {
-    color: #5d4037; 
-  }
-}
-
-
-.intro-text {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin: 50px 10px 20px 10px;
-    padding: 10px 10px;
-}
-
-.intro-text p {
-    font-family: "Times New Roman", Times, serif;
-    font-size: 30px;
-    color: black;
-    font-weight: 500;
-}
-
-.intro-history-section {
-  display: flex;
-  flex-direction: column;
-  background-color: whitesmoke;
-  border-radius: 50px;
-  text-align: center;
-  padding: 50px;
-  margin: 100px;
-  margin-bottom: 25px;
-}
-
-.intro-history-section h1 {
-  font-family: "Times New Roman", Times, serif;
-  font-size: 50px;
-  color: black;
-  margin-bottom: 20px;
-}
-
-.intro-history-section p {
-  font-family: "Times New Roman", Times, serif;
-  font-size: 25px;
-  color: black;
-  font-weight: 500;
-  margin: 15px;
-  padding: 20px;
-}
-
-.learn-more-button {
-  font-family: "Times New Roman", Times, serif;
-  font-size: 20px;
-  color: white;
-  background-color: #6f4e37; 
-  border: none;
-  border-radius: 30px;
-  padding: 15px 30px;
-  cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.3s ease, transform 0.3s ease;
-  margin-top: 20px;
-}
-
-.coffee-varieties-section {
-    display: flex;
-    flex-direction: column;
-    background-color: whitesmoke;
-    border-radius: 50px;
-    text-align: center;
-    padding: 50px;
-    margin: 100px;
-    margin-bottom: 25px;
-}
-
-.coffee-varieties-section h1 {
-  font-family: "Times New Roman", Times, serif;
-  font-size: 50px;
-  color: black;
-  margin-bottom: 20px;
-}
-
-.coffee-varieties-section img {
-  width: 500px;
-  height: 300px;
-  border-radius: 20px;
-  margin: 15px;
-}
-
-.coffee-varieties-section ul {
-  list-style-type: disc;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin: 15px;
-  padding: 25px;
-  border-radius: 50px;
-}
-
-.coffee-varieties-section ul li {
-  font-family: "Times New Roman", Times, serif;
-  font-size: 25px;
-  color: black;
-  font-weight: 500;
-} 
-
- } */
 
 /* Tablets (portrait and landscape) and small desktops */
 @media screen and (min-width: 768px) and (max-width: 1023px) {

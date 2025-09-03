@@ -1,29 +1,138 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import "./home.css"
+import "./home.css";
+
+const categories = [
+  {
+    title: "Coffee Beans & Varieties",
+    image: "/coffee-lovers/photos/CoffeeBeansAndVarieties.jpeg",
+    description: "Learn about Arabica, Robusta, and rare coffee types",
+    link: "/About",
+    button: "Explore Beans",
+  },
+  {
+    title: "Brewing Methods",
+    image: "/coffee-lovers/photos/BrewingMethods.jpeg",
+    description: "Discover classic and modern brewing techniques",
+    link: "/brewing",
+    button: "Learn Brewing",
+  },
+  {
+    title: "Roasting Levels",
+    image: "/coffee-lovers/photos/gradientOfBeans.png",
+    description: "Understand how roasting affects flavor",
+    link: "/roasting",
+    button: "Explore Roasting",
+  },
+  {
+    title: "Coffee Culture",
+    image: "/coffee-lovers/photos/CafeCulture.jpeg",
+    description: "Learn global coffee traditions and ceremonies",
+    link: "/culture",
+    button: "Explore Culture",
+  },
+  {
+    title: "Health & Benefits",
+    image: "/coffee-lovers/photos/Health.jpeg",
+    description: "Discover coffee’s effects on your body and mind",
+    link: "/health",
+    button: "Learn Health",
+  },
+  {
+    title: "Coffee Recipes",
+    image: "/coffee-lovers/photos/Recipes.jpeg",
+    description: "Try classic, trendy, and dessert recipes",
+    link: "/recipes",
+    button: "View Recipes",
+  },
+  {
+    title: "Around the World",
+    image: "/coffee-lovers/photos/AroundTheWorld.jpeg",
+    description: "Explore regional coffee practices and flavors",
+    link: "/around-world",
+    button: "Explore World",
+  },
+  {
+    title: "Sustainability & Trade",
+    image: "/coffee-lovers/photos/SusTrade.jpeg",
+    description: "Learn about ethical sourcing and environmental impact",
+    link: "/sustainability",
+    button: "Learn Sustainability",
+  },
+];
 
 function Home() {
+  const [offset, setOffset] = useState(0);
+  const cardWidth = 350; // width + margin of each card
+  //const visibleCards = 3; // number of cards visible at once
+
+  // Auto-move every 3 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setOffset((prev) => (prev + 1 >= categories.length ? 0 : prev + 1));
+    }, 3000);
+    return () => clearInterval(interval);
+  }, []);
+
+  const prevSlide = () =>
+    setOffset((prev) => (prev - 1 < 0 ? categories.length - 1 : prev - 1));
+  const nextSlide = () =>
+    setOffset((prev) => (prev + 1 >= categories.length ? 0 : prev + 1));
+
   return (
     <div className="home">
       <div className="top-image-container">
-        <img
-          className="home-img"
-          src="/coffee-lovers/photos/coffeeToWrite.jpeg"
-          alt="Coffee Beans"
-        />
+        <div className="top-image-wrapper">
+          <img
+            className="home-img"
+            src="/coffee-lovers/photos/coffeeToWrite.jpeg"
+            alt="Coffee Beans"
+          />
+        </div>
         <div className="text-overlay">
-          <h1>What is Coffee?</h1>
+          <h1>Discover the World of Coffee</h1>
+          <p>Everything you need to know about coffee in one place</p>
         </div>
       </div>
+
       <div className="intro-text">
         <p>
-          Coffee is a brewed beverage made from roasted and ground seeds of the
-          coffee plant-most often served hot, but also enjoyed iced. Its
-          distinctive, somewhat bitter flavor and stimulating effect stem
-          primarily from caffeine, though decaffeinated options are also
-          available.
+          Coffee is brewed from roasted seeds of the Coffea plant, enjoyed
+          worldwide for its flavor, aroma, and culture. On this website, you’ll
+          explore coffee beans, brewing methods, recipes, global culture, and
+          health benefits.
         </p>
+        <Link to="/About">
+          <button className="learn-more-button">Learn More...</button>
+        </Link>
       </div>
+
+      <div className="carousel-container">
+        <button className="arrow left" onClick={prevSlide}>
+          &#10094;
+        </button>
+        <div className="carousel-wrapper">
+          <div
+            className="carousel"
+            style={{ transform: `translateX(-${offset * cardWidth}px)` }}
+          >
+            {categories.concat(categories).map((cat, index) => (
+              <div className="card" key={index}>
+                <img src={cat.image} alt={cat.title} />
+                <h3>{cat.title}</h3>
+                <p>{cat.description}</p>
+                <Link to={cat.link}>
+                  <button className="card-button">{cat.button}</button>
+                </Link>
+              </div>
+            ))}
+          </div>
+        </div>
+        <button className="arrow right" onClick={nextSlide}>
+          &#10095;
+        </button>
+      </div>
+
       <div className="intro-history-section">
         <h1>Origins & Early History</h1>
         <p>
@@ -31,20 +140,25 @@ function Home() {
           region historically known as Kaffa-dating as far back as the 9th
           century, where legend tells of a goat herder, Kaldi, who observed his
           goats becoming unusually energetic after eating coffee cherries.
-          <br/>
-          <br/>
+          <br />
+          <br />
           By the 15th century, coffee cultivation and consumption had spread to
           Yemen, flourishing in Sufi monasteries. From there, it traveled across
           the Middle East, reaching Europe by the 16th and 17th centuries via
           trade routes.
         </p>
         <Link to="/history">
-        <button className="learn-more-button">Learn More...</button>
+          <button className="learn-more-button">Learn More...</button>
         </Link>
       </div>
       <div className="coffee-varieties-section">
         <h1>Coffee Varieties & Botany</h1>
-  <div><img src="/coffee-lovers/photos/ArabicaAndRobusta.jpeg" alt="Arabica and Robusta Coffee Beans" /></div>
+        <div>
+          <img
+            src="/coffee-lovers/photos/ArabicaAndRobusta.jpeg"
+            alt="Arabica and Robusta Coffee Beans"
+          />
+        </div>
         <ul>
           <li>
             Arabica is valued for its smoother, sweeter, more aromatic profile
@@ -57,10 +171,7 @@ function Home() {
         </ul>
       </div>
 
-
-
-     
-      {/* <div className="first-section">
+      <div className="first-section">
         <div className="coffeeTree-img-container">
           <img src="/coffee-lovers/photos/CoffeeTree.jpeg" alt="Coffee Tree" />
         </div>
@@ -117,7 +228,10 @@ function Home() {
           </p>
         </div>
         <div className="coffeeInside-img-container">
-          <img src="/coffee-lovers/photos/coffeeInside.jpeg" alt="Coffee Cherry Diagram" />
+          <img
+            src="/coffee-lovers/photos/coffeeInside.jpeg"
+            alt="Coffee Cherry Diagram"
+          />
         </div>
         <div className="coffeeInside-info">
           <ul>
@@ -148,8 +262,6 @@ function Home() {
           </ul>
         </div>
       </div>
- */}
-
     </div>
   );
 }
