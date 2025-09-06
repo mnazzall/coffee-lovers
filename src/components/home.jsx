@@ -159,6 +159,26 @@ function Home() {
         </Link>
       </div>
 
+      <div className="intro-history-section">
+        <h1>Origins & Early History</h1>
+        <p>
+          Coffee has its roots in the Ethiopian Highlands-specifically the
+          region historically known as Kaffa-dating as far back as the 9th
+          century, where legend tells of a goat herder, Kaldi, who observed his
+          goats becoming unusually energetic after eating coffee cherries.
+          <br />
+          <br />
+          By the 15th century, coffee cultivation and consumption had spread to
+          Yemen, flourishing in Sufi monasteries. From there, it traveled across
+          the Middle East, reaching Europe by the 16th and 17th centuries via
+          trade routes.
+        </p>
+        <Link to="/history">
+          <button className="learn-more-button">Learn More...</button>
+        </Link>
+        
+      </div>
+
       <div className="carousel-container">
         <button className="arrow left" onClick={prevSlide}>
           &#10094;
@@ -236,25 +256,8 @@ function Home() {
         </div>
       </div>
 
-      <div className="intro-history-section">
-        <h1>Origins & Early History</h1>
-        <p>
-          Coffee has its roots in the Ethiopian Highlands-specifically the
-          region historically known as Kaffa-dating as far back as the 9th
-          century, where legend tells of a goat herder, Kaldi, who observed his
-          goats becoming unusually energetic after eating coffee cherries.
-          <br />
-          <br />
-          By the 15th century, coffee cultivation and consumption had spread to
-          Yemen, flourishing in Sufi monasteries. From there, it traveled across
-          the Middle East, reaching Europe by the 16th and 17th centuries via
-          trade routes.
-        </p>
-        <Link to="/history">
-          <button className="learn-more-button">Learn More...</button>
-        </Link>
-      </div>
-      <div className="coffee-varieties-section">
+      
+      {/* <div className="coffee-varieties-section">
         <h1>Coffee Varieties & Botany</h1>
         <div>
           <img
@@ -272,7 +275,7 @@ function Home() {
             content, and is generally more resilient and lower-cost.
           </li>
         </ul>
-      </div>
+      </div> */}
 
       {/* <div className="first-section">
         <div className="coffeeTree-img-container">
