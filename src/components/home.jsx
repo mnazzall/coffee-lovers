@@ -65,7 +65,7 @@ const images = [
   "/coffee-lovers/photos/G1.jpeg",
   "/coffee-lovers/photos/G2.jpeg",
   "/coffee-lovers/photos/G3.jpeg",
-  "/coffee-lovers/photos/G4.jpeg",  
+  "/coffee-lovers/photos/G4.jpeg",
   "/coffee-lovers/photos/G5.jpeg",
   "/coffee-lovers/photos/G6.jpeg",
   "/coffee-lovers/photos/G7.jpeg",
@@ -75,22 +75,42 @@ const images = [
 ];
 
 function Home() {
+
   const [offset, setOffset] = useState(0);
   const [cardWidth, setCardWidth] = useState(0);
   const cardRef = useRef(null);
-  const [current, setCurrent] = useState(0);
 
+  const [current, setCurrent] = useState(0);
+  const [galleryWidth, setGalleryWidth] = useState(0);
+  const galleryRef = useRef(null);
+
+  // ✅ Measure category card width
   useEffect(() => {
     const updateWidth = () => {
       if (cardRef.current) {
-        setCardWidth(cardRef.current.offsetWidth + 20); // card width + margin
+        setCardWidth(cardRef.current.offsetWidth + 20); // include margin
       }
     };
-    updateWidth();
+
+    updateWidth(); // run on mount
     window.addEventListener("resize", updateWidth);
     return () => window.removeEventListener("resize", updateWidth);
   }, []);
 
+  // ✅ Measure gallery image width
+  useEffect(() => {
+    const updateWidth = () => {
+      if (galleryRef.current) {
+        setGalleryWidth(galleryRef.current.offsetWidth  + 20); // include margin
+      }
+    };
+
+    updateWidth(); // run on mount
+    window.addEventListener("resize", updateWidth);
+    return () => window.removeEventListener("resize", updateWidth);
+  }, []);
+
+  // ✅ Auto-move Categories Carousel
   useEffect(() => {
     const interval = setInterval(() => {
       setOffset((prev) => (prev + 1) % categories.length);
@@ -98,32 +118,18 @@ function Home() {
     return () => clearInterval(interval);
   }, []);
 
-  const prevSlide = () =>
-    setOffset((prev) => (prev - 1 < 0 ? categories.length - 1 : prev - 1));
-  const nextSlide = () => setOffset((prev) => (prev + 1) % categories.length);
-
-  useEffect(() => {
-    if (cardRef.current) {
-      setCardWidth(cardRef.current.offsetWidth + 20);
-    }
-
-    const handleResize = () => {
-      if (cardRef.current) {
-        setCardWidth(cardRef.current.offsetWidth + 20);
-      }
-    };
-
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
-
+  // ✅ Auto-move Gallery Slider
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrent((prev) => (prev + 1) % images.length);
     }, 3000);
     return () => clearInterval(interval);
   }, [images.length]);
+
+  const prevSlide = () =>
+    setOffset((prev) => (prev - 1 < 0 ? categories.length - 1 : prev - 1));
+
+  const nextSlide = () => setOffset((prev) => (prev + 1) % categories.length);
 
   return (
     <div className="home">
@@ -199,15 +205,13 @@ function Home() {
         <div className="gallery-image-wrapper">
           <div
             className="gallery-img"
-            style={{
-              transform: `translateX(-${current * cardWidth}px)`,
-            }}
+            style={{ transform: `translateX(-${current * galleryWidth}px)` }}
           >
             {images.concat(images).map((img, index) => (
               <div
                 className="card-img"
                 key={index}
-                ref={index === 0 ? cardRef : null}
+                ref={index === 0 ? galleryRef : null}
               >
                 <img src={img} alt={`coffee-${index}`} />
               </div>
