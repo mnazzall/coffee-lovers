@@ -1,113 +1,134 @@
 import React from "react";
 import "./about.css";
 
-
 function About() {
   return (
-    
+    <div className="about-container">
+      <div className="coffee-tree-image">
+        <img src="/coffee-lovers/photos/CoffeeTree.jpeg" alt="Coffee Tree" />
+      </div>
 
-    <div className="about-page">
-
-      {/* Hero / Intro Section */}
-      <section className="about-hero">
-        <div className="hero-overlay">
-          <h1>Welcome to Coffee Lovers</h1>
-          <p>
-            Explore the rich world of coffee—from its origins and beans to brewing techniques, recipes, culture, and sustainability.
-            Our goal is to guide both beginners and coffee enthusiasts through everything coffee.
-          </p>
-        </div>
-      </section>
-
-      {/* Mission / Vision Section */}
-      <section className="about-mission">
-        <div className="mission-container">
-          <div className="mission-text">
-            <h2>Our Mission</h2>
-            <p>
-              To educate and inspire coffee lovers worldwide by providing accurate, engaging, and visually appealing
-              information about all things coffee.
-            </p>
-          </div>
-          <div className="mission-text">
-            <h2>Our Vision</h2>
-            <p>
-              To become the go-to online resource for coffee enthusiasts and anyone curious about coffee culture.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* What You’ll Find Section */}
-      <section className="about-categories">
-        <h2>What You'll Find Here</h2>
-        <div className="categories-grid">
-          <div className="category-card">
-            <h3>Coffee Beans & Varieties</h3>
-            <p>Learn about Arabica, Robusta, and more from around the world.</p>
-            <a href="/coffee-beans" className="btn">Explore →</a>
-          </div>
-
-          <div className="category-card">
-            <h3>Brewing Methods</h3>
-            <p>Discover the best ways to make your perfect cup of coffee.</p>
-            <a href="/brewing-methods" className="btn">Explore →</a>
-          </div>
-
-          <div className="category-card">
-            <h3>Roasting Levels</h3>
-            <p>Understand light, medium, and dark roasts and how they affect flavor.</p>
-            <a href="/roasting-levels" className="btn">Explore →</a>
-          </div>
-
-          <div className="category-card">
-            <h3>Coffee Culture</h3>
-            <p>Explore how coffee is enjoyed in different countries and traditions.</p>
-            <a href="/coffee-culture" className="btn">Explore →</a>
-          </div>
-
-          <div className="category-card">
-            <h3>Health & Benefits</h3>
-            <p>Learn about coffee’s effects on your health and the science behind it.</p>
-            <a href="/health-benefits" className="btn">Explore →</a>
-          </div>
-
-          <div className="category-card">
-            <h3>Coffee Recipes</h3>
-            <p>From classic espresso drinks to creative desserts, find your next favorite.</p>
-            <a href="/coffee-recipes" className="btn">Explore →</a>
-          </div>
-
-          <div className="category-card">
-            <h3>Around the World</h3>
-            <p>See how coffee is brewed, served, and celebrated across the globe.</p>
-            <a href="/around-the-world" className="btn">Explore →</a>
-          </div>
-
-          <div className="category-card">
-            <h3>Sustainability & Trade</h3>
-            <p>Learn how coffee affects the planet and the communities who grow it.</p>
-            <a href="/sustainability-trade" className="btn">Explore →</a>
-          </div>
-        </div>
-      </section>
-
-      {/* Optional Fun / Visual Section */}
-      <section className="about-funfact">
-        <h2>Did You Know?</h2>
+      <div className="What-is-Coffee">
+        <h1>What is Coffee?</h1>
         <p>
-          Over 2.25 billion cups of coffee are consumed every day worldwide! Coffee has fueled creativity, conversation,
-          and connection for centuries.
+          Coffee is a beverage made from roasted beans of the Coffea plant, but
+          it is far more than that. It’s a global tradition, an economic
+          powerhouse, a cultural symbol, and for many, an essential daily
+          ritual. From its rich aroma to its complex flavors, coffee touches
+          nearly every aspect of modern life—work, leisure, and even art.
         </p>
-      </section>
+      </div>
 
-      {/* Call to Action Section */}
-      <section className="about-cta">
-        <h2>Ready to Explore?</h2>
-        <p>Dive into our categories to discover your next favorite cup of coffee.</p>
-        <a href="/categories" className="btn-main">Explore Categories</a>
-      </section>
+      <div className="Why-Coffee-Matters">
+        <h1>Why Coffee Matters</h1>
+        <ul>
+          <li>
+            <strong>Daily Life: </strong>For billions, coffee is the first step
+            of the morning, a companion during work, or a moment of pause in a
+            busy day.
+          </li>
+          <li>
+            <strong>Culture: </strong>Across the world, coffeehouses are
+            gathering places for conversation, business, creativity, and
+            friendship.
+          </li>
+          <li>
+            <strong>Global Economy: </strong>Coffee supports more than 10
+            million farming families worldwide, making it one of the most
+            valuable agricultural products.
+          </li>
+        </ul>
+      </div>
 
+      <div className="Coffees-Role-in-the-World">
+        <h1>Coffee’s Role in the World</h1>
+        <h3>
+          Coffee is truly international—grown in tropical regions but consumed
+          everywhere. Each cup represents:
+        </h3>
+        <ul>
+          <li>
+            <strong>The farmer’s dedication</strong> – from planting to harvest.
+          </li>
+          <li>
+            <strong>The roaster’s craft</strong> – transforming raw beans into
+            aromatic blends.
+          </li>
+          <li>
+            <strong>The consumer’s experience</strong> – savoring flavors shaped
+            by origin, roast, and preparation.
+          </li>
+        </ul>
+        <h4>
+          This chain of connection makes coffee one of the most unifying
+          beverages in human history.
+        </h4>
+      </div>
+
+      <div className="What-Makes-Coffee-Unique">
+        <h1>What Makes Coffee Unique</h1>
+        <h3>Coffee is unlike any other drink because of its:</h3>
+        <ul>
+          <li>
+            <strong>Flavor diversity:</strong> More than 800 aromatic compounds
+            can be found in coffee, giving it endless taste possibilities.
+          </li>
+          <li>
+            <strong>Adaptability:</strong> Hot or iced, light or strong, quick
+            espresso or slow brew—it fits every personality and mood.
+          </li>
+          <li>
+            <strong>Ritual & experience:</strong> Making coffee can be a simple
+            routine or an elaborate craft, but it’s always personal.
+          </li>
+        </ul>
+      </div>
+
+      <div className="Coffee-and-Community">
+        <h1>Coffee and Community</h1>
+        <h3>Wherever it is found, coffee brings people together:</h3>
+        <ul>
+          <li>
+            In Europe, cafés were once called “penny universities” because of
+            the knowledge exchanged over a single cup.
+          </li>
+          <li>
+            In the Middle East, coffeehouses were hubs of poetry, music, and
+            conversation.
+          </li>
+          <li>
+            Today, coffee shops remain centers for creativity, remote work, and
+            social connection.
+          </li>
+        </ul>
+      </div>
+
+      <div className="Fascinating-Facts-About-Coffee">
+        <h1>Fascinating Facts About Coffee</h1>
+        <ul>
+          <li>Coffee is the second most traded commodity after oil.</li>
+          <li>
+            Over 2.25 billion cups of coffee are consumed worldwide every day.
+          </li>
+          <li>A coffee tree takes 3–4 years before producing cherries</li>
+          <li>
+            Finland has the highest coffee consumption per capita in the world.
+          </li>
+          <li>
+            Beethoven was such a fan that he counted exactly 60 beans for each
+            cup he made.
+          </li>
+        </ul>
+      </div>
+
+      <div className="Our-Passion-for-Coffee">
+        <h1>Our Passion for Coffee</h1>
+        <p>
+          To us, coffee is not just a drink—it’s a story of people, culture, and
+          connection. It represents the dedication of farmers, the artistry of
+          roasters, and the joy of sharing a cup with others.
+        </p>
+      </div>
     </div>
   );
 }
