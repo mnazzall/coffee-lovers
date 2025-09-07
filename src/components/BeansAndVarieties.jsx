@@ -11,7 +11,7 @@ function BeansAndVarieties() {
             alt="Coffee Beans"
           />
         </div>
-        <div className="intro-text">
+        <div className="intro-text-beans">
           <h1>Coffee Beans & Varieties</h1>
           <p>Explore the flavors, aromas, and stories behind every bean.</p>
         </div>

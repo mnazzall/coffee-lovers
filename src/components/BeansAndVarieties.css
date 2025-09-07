@@ -26,20 +26,20 @@
     object-fit: cover;
 }
 
-.intro-text{
+.intro-text-beans{
     position: relative;
     top: -250px;
     margin-bottom: 0px;
 }
 
-.intro-text h1 {
+.intro-text-beans h1 {
     font-family: "Times New Roman", Times, serif;
     font-size: 36px;
     color: whitesmoke;
     margin-bottom: 10px;
 }
 
-.intro-text p {
+.intro-text-beans p {
     font-family: "Times New Roman", Times, serif;
     font-size: 20px;
     color: whitesmoke;
@@ -57,4 +57,33 @@
     border-radius: 50px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .intro-section {
+        margin: 20px 20px 0px 20px;
+    }
+
+    .content-section {
+        grid-template-columns: 1fr;
+        margin: 20px 20px 50px 20px;
+        padding: 20px;
+    }
+    .image-container {
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+    }
+    .intro-text-beans {
+        top: -150px;
+    }
+    .intro-text-beans h1 {
+        font-size: 28px;
+    }
+    .intro-text-beans p {
+        font-size: 16px;
+    }
+    
 }
