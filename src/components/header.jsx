@@ -48,6 +48,11 @@ function Header() {
             </Link>
           </li>
           <li>
+            <Link to="/BeansAndVarieties" onClick={() => setIsOpen(false)}>
+              Beans & Varieties
+            </Link>
+          </li>
+          <li>
             <Link to="/contact" onClick={() => setIsOpen(false)}>
               Contact
             </Link>

@@ -7,7 +7,7 @@ const categories = [
     title: "Coffee Beans & Varieties",
     image: "/coffee-lovers/photos/CoffeeBeansAndVarieties.jpeg",
     description: "Learn about Arabica, Robusta, and rare coffee types",
-    link: "/About",
+    link: "/BeansAndVarieties",
     button: "Explore Beans",
   },
   {
