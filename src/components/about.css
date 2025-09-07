@@ -36,7 +36,7 @@
 .What-is-Coffee h1 {
   font-family: "Times New Roman", Times, serif;
   font-size: 40px;
-  color: black;
+  color: white;
   background-color: #6f4e37;
   padding: 20px;
   border-radius: 50px;
@@ -53,26 +53,28 @@
 .Why-Coffee-Matters {
   display: flex;
   flex-direction: column;
+  background-color: whitesmoke;
+  border-radius: 50px;
   text-align: center;
-  margin: 20px 50px 20px 50px;
-  padding: 10px 200px;
+  margin: 20px 200px 20px 200px;
+  padding: 30px;
 }
 
 .Why-Coffee-Matters h1 {
   font-family: "Times New Roman", Times, serif;
-  font-size: 40px;
+  font-size: 42px;
   color: black;
-  background-color: #6f4e37;
-  padding: 20px;
-  border-radius: 50px;
-  margin: 10px 250px 30px 250px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
 }
 
 .Why-Coffee-Matters ul {
   list-style-type: disc;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
   margin: 15px auto;
   padding: 25px;
   border-radius: 20px;
@@ -88,18 +90,19 @@
 }
 
 .Coffees-Role-in-the-World {
-  display: flex;
+   display: flex;
   flex-direction: column;
+  background-color: whitesmoke;
+  border-radius: 50px;
   text-align: center;
-  margin: 20px 50px 20px 50px;
-  padding: 10px 200px;
+  margin: 20px 200px 20px 200px;
+  padding: 30px;
 }
 
 .Coffees-Role-in-the-World h1 {
   font-family: "Times New Roman", Times, serif;
   font-size: 40px;
   color: black;
-  background-color: #6f4e37;
   padding: 20px;
   border-radius: 50px;
   margin: 10px 250px 30px 250px;
@@ -143,16 +146,17 @@
 .What-Makes-Coffee-Unique {
   display: flex;
   flex-direction: column;
+  background-color: whitesmoke;
+  border-radius: 50px;
   text-align: center;
-  margin: 20px 50px 80px 50px;
-  padding: 10px 200px;
+  margin: 20px 200px 20px 200px;
+  padding: 30px;
 }
 
 .What-Makes-Coffee-Unique h1 {
   font-family: "Times New Roman", Times, serif;
   font-size: 40px;
   color: black;
-  background-color: #6f4e37;
   padding: 20px;
   border-radius: 50px;
   margin: 10px 250px 30px 250px;
@@ -188,16 +192,16 @@
 .Coffee-and-Community {
   display: flex;
   flex-direction: column;
+  background-color: whitesmoke;
+  border-radius: 50px;
   text-align: center;
-  margin: 20px 50px 80px 50px;
-  padding: 10px 200px;
+  margin: 20px 200px 20px 200px;
+  padding: 30px;
 }
 
 .Coffee-and-Community h1 {
   font-family: "Times New Roman", Times, serif;
   font-size: 40px;
-  color: black;
-  background-color: #6f4e37;
   padding: 20px;
   border-radius: 50px;
   margin: 10px 250px 30px 250px;
@@ -233,16 +237,17 @@
 .Fascinating-Facts-About-Coffee {
   display: flex;
   flex-direction: column;
+  background-color: whitesmoke;
+  border-radius: 50px;
   text-align: center;
-  margin: 20px 50px 80px 50px;
-  padding: 10px 200px;
+  margin: 20px 200px 20px 200px;
+  padding: 30px;
 }
 
 .Fascinating-Facts-About-Coffee h1 {
   font-family: "Times New Roman", Times, serif;
   font-size: 40px;
   color: black;
-  background-color: #6f4e37;
   padding: 20px;
   border-radius: 50px;
   margin: 10px 250px 30px 250px;
@@ -270,16 +275,17 @@
 .Our-Passion-for-Coffee {
   display: flex;
   flex-direction: column;
+  background-color: whitesmoke;
+  border-radius: 50px;
   text-align: center;
-  margin: 20px 50px 80px 50px;
-  padding: 10px 200px;
+  margin: 20px 200px 20px 200px;
+  padding: 30px;
 }
 
 .Our-Passion-for-Coffee h1 {
   font-family: "Times New Roman", Times, serif;
   font-size: 40px;
   color: black;
-  background-color: #6f4e37;
   padding: 20px;
   border-radius: 50px;
   margin: 10px 250px 30px 250px;
@@ -292,200 +298,128 @@
   font-weight: 500;
 }
 
+@media screen and (max-width: 767px) {
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .about {
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-}
-
-.about-intro {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  margin: 80px 50px 20px 50px;
-  padding: 10px 200px;
-}
-
-.about-intro h2 {
-  font-family: "Times New Roman", Times, serif;
-  font-size: 40px;
-  color: black;
-  margin-bottom: 10px;
-}
-
-.about-intro p {
-  font-family: "Times New Roman", Times, serif;
-  font-size: 28px;
-  color: black;
-  font-weight: 500;
-}
-
-.about-card {
-  display: flex;
-  flex-direction: column;
-  background-color: whitesmoke;
-  border-radius: 50px;
-  text-align: center;
-  padding: 50px;
-  margin: 100px;
-  margin-bottom: 25px;
-}
-
-.about-card h1 {
-  font-family: "Times New Roman", Times, serif;
-  font-size: 50px;
-  color: black;
-  margin-bottom: 20px;
-}
-
-.about-card p {
-  font-family: "Times New Roman", Times, serif;
-  font-size: 22px;
-  color: black;
-  font-weight: 500;
-  margin: 15px;
+  .coffee-tree-image {
   padding: 10px;
+  margin: 20px;
+  margin-top: 0px;
+  margin-bottom: 15px;
 }
 
-.about-card img {
-  width: 500px;
-  height: 300px;
-  border-radius: 20px;
-  margin: 15px auto;
-  object-fit: cover;
+.coffee-tree-image img {
+  width: 90%;
+  height: 80%;
 }
 
-.about-card ul {
-  list-style-type: disc;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin: 15px auto;
-  padding: 25px;
-  border-radius: 20px;
-  text-align: left;
-  width: fit-content;
+.What-is-Coffee {
+  margin: 5px 10px 20px 10px;
+  padding: 10px 20px;
 }
 
-.about-card ul li {
-  font-family: "Times New Roman", Times, serif;
-  font-size: 22px;
-  color: black;
-  font-weight: 500;
+.What-is-Coffee h1 {
+  font-size: 30px;
+  padding: 10px 5px 10px 10px;
+  border-radius: 50px;
+  margin: 10px 20px 30px 20px;
 }
 
-.about-btn {
-  font-family: "Times New Roman", Times, serif;
-  font-size: 20px;
-  color: white;
-  background-color: #6f4e37;
-  border: none;
-  border-radius: 30px;
-  padding: 15px 30px;
-  cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.3s ease, transform 0.3s ease;
+.What-is-Coffee p {
+  font-size: 24px;
+}
+
+.Why-Coffee-Matters {
+  margin: 20px 20px 20px 20px;
+  padding: 20px;
+}
+
+.Why-Coffee-Matters h1 {
+  font-size: 35px;
+}
+
+.Coffees-Role-in-the-World {
+   margin: 20px 20px 20px 20px;
+  padding: 20px;
+}
+
+.Coffees-Role-in-the-World h1 {
+  font-size: 35px;
+  padding: 10px;
+  margin: 10px 50px 20px 50px;
+}
+
+.Coffees-Role-in-the-World h3 {
+  
+  font-size: 24px;
+  font-weight: 600;
   margin-top: 20px;
 }
 
-.about-btn:hover {
-  transform: scale(1.05);
-  background-color: #a05a3d;
-}
-
-.about-gallery {
-  display: flex;
-  flex-direction: column;
-  background-color: whitesmoke;
-  border-radius: 50px;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  padding: 40px;
-  margin: 120px;
-  margin-top: 50px;
-  margin-bottom: 25px;
-}
-
-.about-gallery h1 {
-  font-family: "Times New Roman", Times, serif;
-  font-size: 45px;
+.Coffees-Role-in-the-World h4 {
+  font-size: 24px;
   color: black;
-  margin-bottom: 30px;
+  font-weight: 600;
+  margin-top: 20px;
+  padding-bottom: 20px;
 }
 
-.about-gallery-wrapper {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-  flex-wrap: wrap;
-  justify-content: center;
+.What-Makes-Coffee-Unique {
+  margin: 20px 20px 20px 20px;
+  padding: 20px;
 }
 
-.about-gallery-img {
-  flex: 0 0 30%;
-  min-width: 250px;
-  max-width: 350px;
-  height: 300px;
-  border-radius: 30px;
-  overflow: hidden;
+.What-Makes-Coffee-Unique h1 {
+  font-size: 32px;
+  padding: 10px;
+  margin: 10px 50px 20px 50px;
 }
 
-.about-gallery-img img {
-  width: 100%;
-  height: 100%;
-  border-radius: 30px;
-  object-fit: cover;
-} */
+.What-Makes-Coffee-Unique h3 {
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.Coffee-and-Community {
+   margin: 20px 20px 20px 20px;
+  padding: 20px;
+}
+
+.Coffee-and-Community h1 {
+  font-size: 32px;
+  padding: 10px;
+  margin: 10px 50px 20px 50px;
+}
+
+.Coffee-and-Community h3 {
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.Fascinating-Facts-About-Coffee {
+   margin: 20px 20px 20px 20px;
+  padding: 20px;
+}
+
+.Fascinating-Facts-About-Coffee h1 {
+  font-size: 32px;
+  padding: 10px;
+  margin: 10px 50px 0px 50px;
+}
+
+.Our-Passion-for-Coffee {
+   margin: 20px 20px 20px 20px;
+  padding: 20px;
+}
+
+.Our-Passion-for-Coffee h1 {
+  font-size: 32px;
+  padding: 10px;
+  margin: 10px 50px 10px 50px;
+}
+
+.Our-Passion-for-Coffee p {
+  font-size: 24px;
+}
+
+
+}
