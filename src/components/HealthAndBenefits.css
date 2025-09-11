@@ -1,0 +1,72 @@
+.health-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.health-intro-container {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 180px 20px 180px;
+  background-color: whitesmoke;
+  border-radius: 50px;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.health-intro-img {
+  margin: 20px 0px 0px 0px;
+  border-radius: 50px;
+  width: 60%;
+  height: 400px;
+}
+
+.health-intro-img img {
+  border-radius: 50px;
+  width: 100%;
+  height: 380px;
+}
+
+.health-intro-content {
+  margin: 0px 0px 20px 0px;
+  align-items: center;
+  text-align: center;
+}
+
+.health-intro-content h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 40px;
+  padding: 20px;
+}
+
+.health-intro-content h4 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 24px;
+}
+
+.health-p {
+  display: flex;
+  flex-direction: column;
+  margin: 40px 180px 20px 180px;
+  align-items: center;
+}
+
+.health-p p {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 26px;
+  color: black;
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.benefits-section  {
+    display: flex;
+  flex-direction: column;
+  margin: 10px 180px 20px 180px;
+  background-color: whitesmoke;
+  border-radius: 50px;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

@@ -35,7 +35,7 @@ const categories = [
     title: "Health & Benefits",
     image: "/coffee-lovers/photos/Health.jpeg",
     description: "Discover coffee’s effects on your body and mind",
-    link: "/health",
+    link: "/HealthAndBenefits",
     button: "Learn Health",
   },
   {

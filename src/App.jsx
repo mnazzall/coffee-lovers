@@ -7,6 +7,7 @@ import Home from "./components/home";
 import About from "./components/about";
 import BeansAndVarieties from "./components/BeansAndVarieties";
 import BrewingMethods from "./components/BrewingMethods";
+import HealthAndBenefits from "./components/HealthAndBenefits";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/BeansAndVarieties" element={<BeansAndVarieties />} />
           <Route path="/BrewingMethods" element={<BrewingMethods />} />
+          <Route path="/HealthAndBenefits" element={<HealthAndBenefits />} />
         </Routes>
         <Footer />
       </Router>
