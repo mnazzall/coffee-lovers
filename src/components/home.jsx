@@ -14,7 +14,7 @@ const categories = [
     title: "Brewing Methods",
     image: "/coffee-lovers/photos/BrewingMethods.jpeg",
     description: "Discover classic and modern brewing techniques",
-    link: "/brewing",
+    link: "/BrewingMethods",
     button: "Learn Brewing",
   },
   {
