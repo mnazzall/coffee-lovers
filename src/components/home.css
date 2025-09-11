@@ -707,12 +707,155 @@
   }
 }
 
-/* Tablets (portrait and landscape) and small desktops */
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  /* Styles for tablets and small desktops */
-}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
-/* Desktops and larger screens */
-@media screen and (min-width: 1024px) {
-  /* Styles for desktops and larger screens */
+  .top-image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: auto;
+    text-align: center;
+  }
+
+  .top-image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: 90vw;
+    height: auto;
+  }
+
+  .text-overlay {
+    position: static;
+    margin: 10px 10px 10px -10px;
+    left: 0;
+    top: 310px;
+    width: 100%;
+    transform: none;
+  }
+
+  .text-overlay h1 {
+    font-size: 36px;
+  }
+
+  .intro-text {
+    align-items: center;
+    justify-content: center;
+    margin: 30px 50px 20px 50px;
+    padding: 10px 15px 10px 15px;
+    width: 100%;
+  }
+
+  .intro-text p {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 32px;
+    color: black;
+    font-weight: 500;
+  }
+
+  .intro-history-section,
+  .coffee-varieties-section {
+    margin: 30px 50px 20px 50px;
+    padding: 20px 5px;
+    border-radius: 50px;
+  }
+
+  .intro-history-section h1 {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 45px;
+    color: black;
+    margin-bottom: 15px;
+  }
+
+  .intro-history-section p {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 28px;
+    color: black;
+    font-weight: 500;
+    margin: 15px;
+    padding: 20px;
+    margin-top: 0px;
+  }
+  .carousel-container {
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    gap: 1%;
+    padding: 10px;
+    margin: 30px 50px 20px 50px;
+  }
+  .card {
+     flex: 0 0 30%;
+    width: 30%;
+     height: 420px;
+     margin: 10px;
+     flex-shrink: 0;
+    }
+
+  .gallery-section {
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    border-radius: 50px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 12px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    width: 100%;
+  }
+
+  .gallery-section h1 {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 40px;
+    color: black;
+    margin-bottom: 25px;
+  }
+
+  .gallery-image-wrapper {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    margin: 10px;
+    border-radius: 50px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .gallery-img {
+    display: flex;
+    flex-direction: row;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .card-img {
+    flex: 0 0 98%;
+    min-width: 100px;
+    width: 80%;
+    height: 400px;
+    margin: 10px;
+    border-radius: 30px;
+    text-align: center;
+    flex-shrink: 0;
+    overflow: hidden;
+    position: static;
+  }
+
+  .card-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    object-fit: cover;
+  }
 }

@@ -369,3 +369,134 @@
     
 }
 
+@media (min-width: 769px) and (max-width: 1024px) {
+  .brewing-first-section {
+  margin: 10px 50px 10px 50px;
+  padding: 30px;
+}
+
+.brewing-first-section img {
+  width: 80%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.brewing-first-section h1 {
+  font-size: 32px;
+  padding: 15px 0px 15px 0px ;
+}
+
+.brewing-first-section h4 {
+  font-size: 24px;
+}
+    
+.brewing-intro-section {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 50px 10px 50px;
+  padding: 20px;
+}
+
+.brewing-intro-section img {
+  width: 50%;
+  height: 400px;
+}
+
+.brewing-intro-section p {
+  font-size: 24px;
+  text-align: center;
+}
+
+.methods-section {
+  margin: 30px 50px 20px 50px;
+  padding: 30px;
+}
+
+.shared-methods-styles h1 {
+  font-size: 28px;
+  padding: 20px;
+  margin: 10px 120px 20px 120px;
+}
+
+.shared-methods-styles img {
+  width: 100%;
+  height: auto;
+}
+
+.shared-methods-styles h3 {
+  font-size: 30px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.shared-methods-styles ul {
+  font-size: 24px;
+  margin-left: 35px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.shared-methods-styles ol {
+  font-size: 24px;
+  margin-left: 35px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.shared-methods-styles p {
+  font-size: 24px;
+  margin: 0px 0px 20px 0px;
+}
+
+.esspresso-method img {
+    width: 100%;
+    height: auto;
+}
+
+.aeroPress-method img {
+    width: 75%;
+    height: 550px;
+}
+
+.coldBrew-method img {
+    width: 75%;
+    height: 550px;
+}
+
+.mokaPot-method img {
+    width: 80%;
+    height: auto;
+}
+
+.comparison-table-section {
+    margin: 20px 50px 50px 50px;
+    padding: 30px;
+    overflow-x: auto;
+}
+
+.comparison-table-section th, .comparison-table-section td {
+  padding: 8px;
+}
+
+.comparison-table-section th {
+  font-size: 24px;
+}
+
+.comparison-table-section td {
+  font-size: 20px;
+}
+
+.explore-beans-section {
+  margin: 20px 50px 20px 50px;
+  padding: 30px;
+}
+
+.explore-beans-section img {
+  width: 80%;
+  height: auto;
+}
+
+.explore-beans-section p {
+  font-size: 24px;
+} 
+}

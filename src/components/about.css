@@ -423,3 +423,128 @@
 
 
 }
+
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+  .coffee-tree-image {
+  padding: 20px;
+  margin: 30px;
+  margin-top: 0px;
+  margin-bottom: 15px;
+}
+
+.coffee-tree-image img {
+  width: 80%;
+  height: 80%;
+}
+
+.What-is-Coffee {
+  margin: 5px 50px 20px 50px;
+  padding: 10px 20px;
+}
+
+.What-is-Coffee h1 {
+  font-size: 34px;
+  padding: 10px 5px 10px 10px;
+  border-radius: 50px;
+  margin: 10px 20px 30px 20px;
+}
+
+.What-is-Coffee p {
+  font-size: 28px;
+}
+
+.Why-Coffee-Matters {
+  margin: 20px 50px 20px 50px;
+  padding: 30px;
+}
+
+.Why-Coffee-Matters h1 {
+  font-size: 38px;
+}
+
+.Coffees-Role-in-the-World {
+   margin: 20px 50px 20px 50px;
+  padding: 30px;
+}
+
+.Coffees-Role-in-the-World h1 {
+  font-size: 38px;
+  padding: 10px;
+  margin: 10px 50px 20px 50px;
+}
+
+.Coffees-Role-in-the-World h3 {
+  
+  font-size: 25px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.Coffees-Role-in-the-World h4 {
+  font-size: 25px;
+  color: black;
+  font-weight: 600;
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+
+.What-Makes-Coffee-Unique {
+  margin: 20px 50px 20px 50px;
+  padding: 30px;
+}
+
+.What-Makes-Coffee-Unique h1 {
+  font-size: 38px;
+  padding: 10px;
+  margin: 10px 50px 20px 50px;
+}
+
+.What-Makes-Coffee-Unique h3 {
+  font-size: 25px;
+  margin-top: 10px;
+}
+
+.Coffee-and-Community {
+   margin: 20px 50px 20px 50px;
+  padding: 30px;
+}
+
+.Coffee-and-Community h1 {
+  font-size: 38px;
+  padding: 10px;
+  margin: 10px 50px 20px 50px;
+}
+
+.Coffee-and-Community h3 {
+  font-size: 25px;
+  margin-top: 10px;
+}
+
+.Fascinating-Facts-About-Coffee {
+   margin: 20px 50px 20px 50px;
+  padding: 30px;
+}
+
+.Fascinating-Facts-About-Coffee h1 {
+  font-size: 38px;
+  padding: 10px;
+  margin: 10px 50px 0px 50px;
+}
+
+.Our-Passion-for-Coffee {
+   margin: 20px 50px 20px 50px;
+  padding: 30px;
+}
+
+.Our-Passion-for-Coffee h1 {
+  font-size: 38px;
+  padding: 10px;
+  margin: 10px 50px 10px 50px;
+}
+
+.Our-Passion-for-Coffee p {
+  font-size: 28px;
+}
+}
