@@ -16,6 +16,7 @@
   margin: 250px;
   margin-top: 0px;
   margin-bottom: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .coffee-tree-image img {
@@ -58,6 +59,7 @@
   text-align: center;
   margin: 20px 200px 20px 200px;
   padding: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .Why-Coffee-Matters h1 {
@@ -97,6 +99,7 @@
   text-align: center;
   margin: 20px 200px 20px 200px;
   padding: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .Coffees-Role-in-the-World h1 {
@@ -151,6 +154,7 @@
   text-align: center;
   margin: 20px 200px 20px 200px;
   padding: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .What-Makes-Coffee-Unique h1 {
@@ -197,6 +201,7 @@
   text-align: center;
   margin: 20px 200px 20px 200px;
   padding: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .Coffee-and-Community h1 {
@@ -242,6 +247,7 @@
   text-align: center;
   margin: 20px 200px 20px 200px;
   padding: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .Fascinating-Facts-About-Coffee h1 {
@@ -280,6 +286,7 @@
   text-align: center;
   margin: 20px 200px 20px 200px;
   padding: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .Our-Passion-for-Coffee h1 {

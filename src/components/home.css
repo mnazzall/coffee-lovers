@@ -16,6 +16,7 @@
   margin: 120px;
   margin-top: 20px;
   margin-bottom: 25px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .top-image-wrapper {
@@ -71,6 +72,7 @@
   margin: 120px;
   margin-top: 50px;
   margin-bottom: 25px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .carousel-wrapper {
@@ -175,6 +177,7 @@
   margin: 120px;
   margin-top: 50px;
   margin-bottom: 25px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .gallery-section h1 {
@@ -277,6 +280,7 @@
   padding: 50px;
   margin: 100px;
   margin-bottom: 25px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .intro-history-section h1 {

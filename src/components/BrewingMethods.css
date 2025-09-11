@@ -238,7 +238,7 @@
 @media screen and (max-width: 768px) {
 
  .brewing-first-section {
-  margin: 10px 50px 10px 50px;
+  margin: 10px 20px 10px 20px;
   padding: 20px;
 }
 
@@ -260,13 +260,13 @@
 .brewing-intro-section {
   display: flex;
   flex-direction: column;
-  margin: 30px 50px 10px 50px;
+  margin: 30px 20px 10px 20px;
   padding: 20px;
 }
 
 .brewing-intro-section img {
   width: 85%;
-  height: auto;
+  height: 300px;
 }
 
 .brewing-intro-section p {
@@ -275,7 +275,7 @@
 }
 
 .methods-section {
-  margin: 30px 50px 20px 50px;
+  margin: 30px 20px 20px 20px;
   padding: 20px;
 }
 
@@ -321,13 +321,13 @@
 }
 
 .aeroPress-method img {
-    width: 100%;
-    height: auto;
+    width: 85%;
+    height: 300px;
 }
 
 .coldBrew-method img {
-    width: 100%;
-    height: auto;
+    width: 85%;
+    height: 300px;
 }
 
 .mokaPot-method img {
@@ -336,7 +336,7 @@
 }
 
 .comparison-table-section {
-    margin: 20px 50px 50px 50px;
+    margin: 20px 20px 50px 20px;
     padding: 20px;
     overflow-x: auto;
 }
@@ -354,7 +354,7 @@
 }
 
 .explore-beans-section {
-  margin: 20px 50px 20px 50px;
+  margin: 20px 20px 20px 20px;
   padding: 20px;
 }
 
