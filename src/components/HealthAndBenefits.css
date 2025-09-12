@@ -46,13 +46,13 @@
 .health-p {
   display: flex;
   flex-direction: column;
-  margin: 40px 180px 20px 180px;
+  margin: 80px 180px 80px 180px;
   align-items: center;
 }
 
 .health-p p {
   font-family: "Times New Roman", Times, serif;
-  font-size: 26px;
+  font-size: 28px;
   color: black;
   text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3);
   text-align: center;
@@ -62,11 +62,431 @@
 
 
 .benefits-section  {
-    display: flex;
+  display: flex;
   flex-direction: column;
   margin: 10px 180px 20px 180px;
   background-color: whitesmoke;
   border-radius: 50px;
   align-items: center;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.benefits-section h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 40px;
+  padding: 30px;
+  text-align: center;
+}
+
+.benefits-section ol {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 26px;
+  color: black;
+  font-weight: 600;
+  text-align: left;
+  margin: 20px 50px 20px 80px;
+}
+
+.benefits-section ol li {
+  margin-bottom: 10px;
+}
+
+.benefits-section  ol li ul {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 24px;
+  color: black;
+  font-weight: 500;
+  text-align: left;
+  margin: 25px 0px 25px 50px;
+}
+
+.benefits-section ol li ul li  {
+  margin-bottom: 10px;
+}
+
+.health-table-container {
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    border-radius: 50px;
+    margin: 20px 180px 50px 180px;
+    padding: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.health-table-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.health-table-container caption  {
+  caption-side: top; 
+  font-size: 2rem;
+  font-weight: bold;
+  color: black;
+  padding: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.health-table-container th, .health-table-container td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+}
+
+.health-table-container th {
+  background-color: #6f4e37;
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 24px;
+}
+
+.health-table-container td {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+}
+
+.health-table-container tr:hover {
+  background-color: #ddd;
+}
+
+.Recommended-Consumption-container {
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    border-radius: 50px;
+    margin: 20px 180px 50px 180px;
+    padding: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    align-items: center;
+}
+
+.Recommended-Consumption-container h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 40px;
+  padding: 20px;
+}
+
+.Recommended-Consumption-container ul {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 24px;
+  color: black;
+  font-weight: 500;
+  text-align: left;
+  margin: 25px 0px 25px 20px;
+}
+
+.Recommended-Consumption-container ul li {
+  margin-bottom: 10px;
+}
+
+.health-tips-container {
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    border-radius: 50px;
+    margin: 20px 180px 50px 180px;
+    padding: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    align-items: center;
+}
+
+.health-tips-container h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 40px;
+  padding: 20px;
+}
+
+.health-tips-container ol {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 24px;
+  color: black;
+  font-weight: 500;
+  text-align: left;
+  margin: 25px 0px 25px 20px;
+}
+
+.health-tips-container ol li {
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) { 
+
+.health-intro-container {
+  margin: 10px 20px 20px 20px;
+}
+
+.health-intro-img {
+  width: 90%;
+  height: auto;
+}
+
+.health-intro-img img {
+  width: 100%;
+  height: auto;
+}
+
+.health-intro-content {
+  margin: 10px 0px 20px 0px;
+}
+
+.health-intro-content h1 {
+  font-size: 32px;
+}
+
+.health-intro-content h4 {
+  font-size: 22px;
+}
+
+.health-p {
+  margin: 30px 20px 40px 20px;
+  align-items: center;
+}
+
+.health-p p {
+  font-size: 24px;
+}
+
+
+.benefits-section  {
+  margin: 10px 20px 20px 20px;
+}
+
+.benefits-section h1 {
+  font-size: 32px;
+}
+
+.benefits-section ol {
+  font-size: 22px;
+  margin: 20px 20px 20px 40px;
+}
+
+.benefits-section ol li {
+  margin-bottom: 10px;
+}
+
+.benefits-section  ol li ul {
+  font-size: 20px;
+  margin: 25px 0px 25px 30px;
+}
+
+.benefits-section ol li ul li  {
+  margin-bottom: 10px;
+}
+
+.health-table-container {
+    margin: 20px 20px 50px 20px;
+    padding: 20px;
+}
+
+.health-table-container table {
+  margin-top: 0px;
+}
+
+.health-table-container caption  {
+  font-size: 24px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.health-table-container th, .health-table-container td {
+    padding: 11px;
+}
+
+.health-table-container th {
+  font-size: 22px;
+}
+
+.health-table-container td {
+  font-size: 18px;
+}
+
+.Recommended-Consumption-container {
+    margin: 20px 20px 50px 20px;
+    padding: 30px;
+    align-items: center;
+}
+
+.Recommended-Consumption-container h1 {
+  font-size: 32px;
+  padding: 0px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.Recommended-Consumption-container ul {
+  font-size: 20px;
+  margin: 20px 0px 20px 20px;
+}
+
+.Recommended-Consumption-container ul li {
+  margin-bottom: 10px;
+}
+
+.health-tips-container {
+    margin: 20px 20px 50px 20px;
+    padding: 30px;
+}
+
+.health-tips-container h1 {
+  font-size: 32px;
+  padding: 0px;
+   align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.health-tips-container ol {
+  font-size: 20px;
+  margin: 20px 0px 20px 20px;
+}
+
+.health-tips-container ol li {
+  margin-bottom: 10px;
+}
+
+}
+
+@media (min-width: 769px) and (max-width: 1024px) { 
+
+.health-intro-container {
+  margin: 10px 50px 20px 50px;
+}
+
+.health-intro-img {
+  width: 80%;
+  height: auto;
+}
+
+.health-intro-img img {
+  width: 100%;
+  height: auto;
+}
+
+.health-intro-content {
+  margin: 20px 10px 30px 10px;
+}
+
+.health-intro-content h1 {
+  font-size: 36px;
+}
+
+.health-intro-content h4 {
+  font-size: 26px;
+}
+
+.health-p {
+  margin: 30px 50px 40px 50px;
+  align-items: center;
+}
+
+.health-p p {
+  font-size: 32px;
+}
+
+
+.benefits-section  {
+  margin: 10px 50px 20px 50px;
+}
+
+.benefits-section h1 {
+  font-size: 36px;
+}
+
+.benefits-section ol {
+  font-size: 28px;
+  margin: 20px 30px 20px 60px;
+}
+
+.benefits-section ol li {
+  margin-bottom: 10px;
+}
+
+.benefits-section  ol li ul {
+  font-size: 26px;
+  margin: 20px 0px 20px 40px;
+}
+
+.benefits-section ol li ul li  {
+  margin-bottom: 10px;
+}
+
+.health-table-container {
+    margin: 20px 50px 30px 50px;
+    padding: 30px;
+}
+
+.health-table-container table {
+  margin-top: 10px;
+}
+
+.health-table-container caption  {
+  font-size: 28px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.health-table-container th, .health-table-container td {
+    padding: 12px;
+}
+
+.health-table-container th {
+  font-size: 24px;
+}
+
+.health-table-container td {
+  font-size: 22px;
+}
+
+.Recommended-Consumption-container {
+    margin: 20px 50px 30px 50px;
+    padding: 30px;
+    align-items: center;
+}
+
+.Recommended-Consumption-container h1 {
+  font-size: 36px;
+  padding: 5px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.Recommended-Consumption-container ul {
+  font-size: 24px;
+  margin: 20px 0px 20px 30px;
+}
+
+.Recommended-Consumption-container ul li {
+  margin-bottom: 10px;
+}
+
+.health-tips-container {
+    margin: 20px 50px 30px 50px;
+    padding: 30px;
+}
+
+.health-tips-container h1 {
+  font-size: 36px;
+  padding: 5px;
+   align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.health-tips-container ol {
+  font-size: 24px;
+  margin: 20px 0px 20px 30px;
+}
+
+.health-tips-container ol li {
+  margin-bottom: 10px;
+}
+
+
+
 }
