@@ -28,7 +28,7 @@ const categories = [
     title: "Coffee Culture",
     image: "/coffee-lovers/photos/CafeCulture.jpeg",
     description: "Learn global coffee traditions and ceremonies",
-    link: "/culture",
+    link: "/Culture",
     button: "Explore Culture",
   },
   {

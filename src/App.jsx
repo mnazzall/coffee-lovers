@@ -8,6 +8,7 @@ import About from "./components/about";
 import BeansAndVarieties from "./components/BeansAndVarieties";
 import BrewingMethods from "./components/BrewingMethods";
 import HealthAndBenefits from "./components/HealthAndBenefits";
+import Culture from "./components/Culture"
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/BeansAndVarieties" element={<BeansAndVarieties />} />
           <Route path="/BrewingMethods" element={<BrewingMethods />} />
           <Route path="/HealthAndBenefits" element={<HealthAndBenefits />} />
+          <Route path="/Culture" element={<Culture />} />
         </Routes>
         <Footer />
       </Router>
