@@ -3,7 +3,7 @@ import "./Culture.css";
 
 function Culture() {
   return (
-    <div>
+    <div className="culture-container">
       <div>
         <img src="/coffee-lovers/photos/Cultureintro.jpg" alt="latte" />
         <h1>Coffee Culture</h1>

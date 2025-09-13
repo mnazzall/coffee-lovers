@@ -21,7 +21,7 @@ const categories = [
     title: "Roasting Levels",
     image: "/coffee-lovers/photos/gradientOfBeans.png",
     description: "Understand how roasting affects flavor",
-    link: "/roasting",
+    link: "/RoastingLevels",
     button: "Explore Roasting",
   },
   {
