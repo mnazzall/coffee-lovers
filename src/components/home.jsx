@@ -173,7 +173,7 @@ function Home() {
           the Middle East, reaching Europe by the 16th and 17th centuries via
           trade routes.
         </p>
-        <Link to="/history">
+        <Link to="/History">
           <button className="learn-more-button">Learn More...</button>
         </Link>
         

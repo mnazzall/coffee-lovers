@@ -10,6 +10,7 @@ import BrewingMethods from "./components/BrewingMethods";
 import HealthAndBenefits from "./components/HealthAndBenefits";
 import Culture from "./components/Culture"
 import RoastingLevels from "./components/RoastingLevels";
+import History from "./components/History"; 
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/HealthAndBenefits" element={<HealthAndBenefits />} />
           <Route path="/Culture" element={<Culture />} />
           <Route path="/RoastingLevels" element={<RoastingLevels />} />
+          <Route path="/History" element={<History />} />
         </Routes>
         <Footer />
       </Router>
