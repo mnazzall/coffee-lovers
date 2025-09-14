@@ -4,12 +4,12 @@ import "./Culture.css";
 function Culture() {
   return (
     <div className="culture-container">
-      <div>
+      <div className="culture-intro-container">
         <img src="/coffee-lovers/photos/Cultureintro.jpg" alt="latte" />
         <h1>Coffee Culture</h1>
         <p>More than a drink—it's a way of life.</p>
       </div>
-      <div>
+      <div className="culture-content-container">
         <p>
           Coffee is far more than a beverage—it’s a ritual, a tradition, and a
           shared experience connecting people worldwide. From its ancient
@@ -19,9 +19,9 @@ function Culture() {
           thrive across generations.
         </p>
       </div>
-      <div>
+      <div className="culture-roots-container">
         <h1>The Roots of Coffee Culture</h1>
-        <div>
+        <div className="culture-roots-shared">
           <h2>Ethiopian Origins-The Birthplace of Coffee</h2>
           <img
             src="/coffee-lovers/photos/Ethiopiancoffee.jpg"
@@ -35,7 +35,7 @@ function Culture() {
           </p>
           <ul>
             <li>
-              Cultural Significance: Coffee ceremonies highlight hospitality and
+              <strong>Cultural Significance:</strong> Coffee ceremonies highlight hospitality and
               respect.
             </li>
             <li>
@@ -44,7 +44,7 @@ function Culture() {
             </li>
           </ul>
         </div>
-        <div>
+        <div className="culture-roots-shared">
           <h2>The Middle Eastern Coffeehouses-“Schools of the Wise”</h2>
           <img
             src="/coffee-lovers/photos/middleeastcoffee.jpg"
@@ -62,7 +62,7 @@ function Culture() {
             </li>
           </ul>
         </div>
-        <div>
+        <div className="culture-roots-shared">
           <h2>European Expansion-Coffee Meets the Enlightenment</h2>
           <img
             src="/coffee-lovers/photos/Coffeetimein1600s.jpg"
@@ -88,7 +88,7 @@ function Culture() {
             </li>
           </ul>
         </div>
-        <div>
+        <div className="culture-roots-shared">
           <h2>Global Spread-Coffee as a Commodity</h2>
           <img
             src="/coffee-lovers/photos/GlobalSpreadCoffeeasaCommodity.jpg"
@@ -101,45 +101,83 @@ function Culture() {
           </p>
         </div>
       </div>
-      <div>
+
+      <div className="Coffee-as-a-Social-Connector-container">
         <h1>Coffee as a Social Connector</h1>
-        <div>
-        <img src="/coffee-lovers/photos/FreeFriendsEnjoyingCoffee.jpg" alt="Friends Enjoying Coffee" /></div>
-        <div>
-        <ul>
-            <li><strong>Gathering Spaces:</strong> Cafés serve as modern social hubs for friends, students, and professionals.</li>
-            <li><strong>Ceremonies & Rituals:</strong> From Ethiopian coffee ceremonies to European coffeehouse traditions, rituals create meaningful experiences.</li>
-            <li><strong>Work & Study:</strong> Cafés act as “third places” outside home and work for studying, meetings, and relaxation.</li>
-        </ul>
+        <div className="Coffee-as-a-Social-Connector">
+        <div className="Coffee-as-a-Social-Connector-img">
+          <img
+            src="/coffee-lovers/photos/FreeFriendsEnjoyingCoffee.jpg"
+            alt="Friends Enjoying Coffee"
+          />
+        </div>
+        <div className="Coffee-as-a-Social-Connector-list">
+          <ul>
+            <li>
+              <strong>Gathering Spaces:</strong> Cafés serve as modern social
+              hubs for friends, students, and professionals.
+            </li>
+            <li>
+              <strong>Ceremonies & Rituals:</strong> From Ethiopian coffee
+              ceremonies to European coffeehouse traditions, rituals create
+              meaningful experiences.
+            </li>
+            <li>
+              <strong>Work & Study:</strong> Cafés act as “third places” outside
+              home and work for studying, meetings, and relaxation.
+            </li>
+          </ul>
+        </div>
         </div>
       </div>
 
-        <div>
-            <h1>
-                The Modern Coffee Lifestyle
-            </h1>
-            <div>
-            <img src="/coffee-lovers/photos/Baristadoingesspreso.jpg" alt="Barista doing esspreso" />
-            </div>
-            <div>
-            <ul>
-                <li><strong>Third-Wave Coffee Movement:</strong> Focuses on quality, sustainability, and artisanal brewing.</li>
-                <li><strong>Home Brewing Renaissance:</strong> Pour-overs, French presses, and espresso machines allow coffee to become a personal ritual.</li>
-                <li><strong>Coffee & Creativity:</strong> Coffee fuels writers, artists, and innovators by offering comfort, energy, and inspiration.</li>
-            </ul>
-            </div>
+      <div className="coffee-lifestyle-container">
+        <h1>The Modern Coffee Lifestyle</h1>
+        <div className="coffee-lifestyle">
+        <div className="coffee-lifestyle-img">
+          <img
+            src="/coffee-lovers/photos/Baristadoingesspreso.jpg"
+            alt="Barista doing esspreso"
+          />
         </div>
+        <div className="coffee-lifestyle-list">
+          <ul>
+            <li>
+              <strong>Third-Wave Coffee Movement:</strong> Focuses on quality,
+              sustainability, and artisanal brewing.
+            </li>
+            <li>
+              <strong>Home Brewing Renaissance:</strong> Pour-overs, French
+              presses, and espresso machines allow coffee to become a personal
+              ritual.
+            </li>
+            <li>
+              <strong>Coffee & Creativity:</strong> Coffee fuels writers,
+              artists, and innovators by offering comfort, energy, and
+              inspiration.
+            </li>
+          </ul>
+        </div>
+        </div>
+      </div>
 
-            <div>
-                <h1>Fun Facts About Coffee Culture</h1>
-                <ul>
-                    <li>Coffee is the second most traded commodity in the world after oil.</li>
-                    <li>Over 2 billion cups are consumed globally every day.</li>
-                    <li>Coffee breaks are often considered essential for wellbeing and productivity.</li>
-                    <li>Traditions vary—some cultures favor fast coffee, others focus on ceremonial preparation.</li>
-                </ul>
-            </div>
-
+      <div className="Fun-Facts-About-Coffee-Culture-container">
+        <h1>Fun Facts About Coffee Culture</h1>
+        <ul>
+          <li>
+            Coffee is the second most traded commodity in the world after oil.
+          </li>
+          <li>Over 2 billion cups are consumed globally every day.</li>
+          <li>
+            Coffee breaks are often considered essential for wellbeing and
+            productivity.
+          </li>
+          <li>
+            Traditions vary—some cultures favor fast coffee, others focus on
+            ceremonial preparation.
+          </li>
+        </ul>
+      </div>
     </div>
   );
 }
