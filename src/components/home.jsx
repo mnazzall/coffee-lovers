@@ -42,21 +42,21 @@ const categories = [
     title: "Coffee Recipes",
     image: "/coffee-lovers/photos/Recipes.jpeg",
     description: "Try classic, trendy, and dessert recipes",
-    link: "/recipes",
+    link: "/Recipes",
     button: "View Recipes",
   },
   {
     title: "Around the World",
     image: "/coffee-lovers/photos/AroundTheWorld.jpeg",
     description: "Explore regional coffee practices and flavors",
-    link: "/around-world",
+    link: "/AroundTheWorld",
     button: "Explore World",
   },
   {
     title: "Sustainability & Trade",
     image: "/coffee-lovers/photos/SusTrade.jpeg",
     description: "Learn about ethical sourcing and environmental impact",
-    link: "/sustainability",
+    link: "/SustainabilityAndTrade",
     button: "Learn Sustainability",
   },
 ];
@@ -250,7 +250,7 @@ function Home() {
         </div>
 
         <div className="gallery-button-container">
-          <Link to="/gallery">
+          <Link to="/Gallery">
             <button className="learn-more-button">View Full Gallery</button>
           </Link>
         </div>

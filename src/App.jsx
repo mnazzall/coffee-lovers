@@ -11,6 +11,10 @@ import HealthAndBenefits from "./components/HealthAndBenefits";
 import Culture from "./components/Culture"
 import RoastingLevels from "./components/RoastingLevels";
 import History from "./components/History"; 
+import Recipes from "./components/Recipes"
+import AroundTheWorld from "./components/AroundTheWorld"
+import SustainabilityAndTrade from "./components/SustainabilityAndTrade"
+import Gallery from "./components/Gallery"
 
 function App() {
   return (
@@ -26,6 +30,10 @@ function App() {
           <Route path="/Culture" element={<Culture />} />
           <Route path="/RoastingLevels" element={<RoastingLevels />} />
           <Route path="/History" element={<History />} />
+          <Route path="/Recipes" element={<Recipes />} />
+          <Route path="/AroundTheWorld" element={<AroundTheWorld />} />
+          <Route path="/SustainabilityAndTrade" element={<SustainabilityAndTrade />} />
+          <Route path="/Gallery" element={<Gallery />} />
         </Routes>
         <Footer />
       </Router>
