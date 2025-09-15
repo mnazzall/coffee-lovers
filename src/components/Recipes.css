@@ -1,0 +1,287 @@
+.recipes-container {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.recipes-intro-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 180px 20px 180px;
+  padding: 40px;
+  background-color: whitesmoke;
+  border-radius: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.recipes-intro-container img {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+.recipes-intro-container h1 {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 36px;
+    padding: 20px;
+}
+
+.recipes-intro-container p {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 26px;
+    font-weight: 500;
+    color: black;
+}
+
+.recipes-drinkes-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 180px 20px 180px;
+  padding: 40px;
+  background-color: whitesmoke;
+  border-radius: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.recipes-drinkes-container h1 {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 36px;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+.recipes-drinkes-container ol {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 28px;
+    color: black;
+    font-weight: 600;
+    text-align: left;
+    margin: 20px 50px 20px 60px;
+}
+
+.recipes-drinkes-container ol li {
+    margin-bottom: 10px;
+}
+
+.recipes-drinkes-container ol li ul {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 26px;
+    color: black;
+    font-weight: 500;
+    text-align: left;
+    margin: 25px 0px 25px 40px;
+}
+
+.recipes-drinkes-container ol li ul li {
+    margin-bottom: 10px;
+}
+
+.recipes-drinkes-container ol li ul li ul {
+    list-style-type: disc;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 24px;
+    color: black;
+    font-weight: 500;
+    text-align: left;
+    margin: 25px 0px 25px 40px;
+}
+
+.recipes-drinkes-container ol li ul li ul li {
+    margin-bottom: 10px;
+}
+
+.recipes-closing-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 180px 20px 180px;
+  padding: 40px;
+  background-color: whitesmoke;
+  border-radius: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.recipes-closing-container img {
+    width: 60%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 50px; 
+    margin-left: 100px;
+}
+
+.recipes-closing-container p {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 26px;
+    font-weight: 500;
+    color: black;
+    text-align: left;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .recipes-intro-container {
+        margin: 20px 20px 20px 20px;
+        padding: 10px;
+      }
+      
+      .recipes-intro-container img {
+          width: 90%;
+          height: auto;
+      }
+      
+      .recipes-intro-container h1 {
+          font-size: 28px;
+          padding: 20px;
+      }
+      
+      .recipes-intro-container p {
+          font-size: 24px;
+      }
+      
+      .recipes-drinkes-container {
+        margin: 20px 20px 20px 20px;
+        padding: 10px;
+      }
+      
+      .recipes-drinkes-container h1 {
+          font-size: 28px;
+          padding: 20px;
+          margin-bottom: 30px;
+      }
+      
+      .recipes-drinkes-container ol {
+          font-size: 26px;
+          margin: 10px 20px 10px 30px;
+      }
+      
+      .recipes-drinkes-container ol li {
+          margin-bottom: 8px;
+      }
+      
+      .recipes-drinkes-container ol li ul {
+          font-size: 24px;
+          margin: 20px 0px 10px 30px;
+      }
+      
+      .recipes-drinkes-container ol li ul li {
+          margin-bottom: 8px;
+      }
+      
+      .recipes-drinkes-container ol li ul li ul {
+          font-size: 22px;
+          margin: 20px 0px 20px 35px;
+      }
+      
+      .recipes-drinkes-container ol li ul li ul li {
+          margin-bottom: 10px;
+      }
+      
+      .recipes-closing-container {
+        display: flex;
+        flex-direction: column;
+        margin: 20px 20px 20px 20px;
+        padding: 10px;
+      }
+      
+      .recipes-closing-container img {
+          width: 90%;
+          margin-left: 0px;
+      }
+      
+      .recipes-closing-container p {
+          font-size: 24px;
+          padding: 20px;
+          text-align: center;
+          align-items: center;
+      }
+      
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    
+    .recipes-intro-container {
+        margin: 20px 50px 20px 50px;
+        padding: 20px;
+      }
+      
+      .recipes-intro-container img {
+          width: 70%;
+          height: auto;
+      }
+      
+      .recipes-intro-container h1 {
+          font-size: 36px;
+          padding: 20px;
+      }
+      
+      .recipes-intro-container p {
+          font-size: 26px;
+      }
+      
+      .recipes-drinkes-container {
+        margin: 20px 50px 20px 50px;
+        padding: 20px;
+      }
+      
+      .recipes-drinkes-container h1 {
+          font-size: 36px;
+          padding: 20px;
+          margin-bottom: 40px;
+      }
+      
+      .recipes-drinkes-container ol {
+          font-size: 28px;
+          margin: 10px 20px 10px 50px;
+      }
+      
+      .recipes-drinkes-container ol li {
+          margin-bottom: 10px;
+      }
+      
+      .recipes-drinkes-container ol li ul {
+          font-size: 26px;
+          margin: 20px 0px 10px 30px;
+      }
+      
+      .recipes-drinkes-container ol li ul li {
+          margin-bottom: 8px;
+      }
+      
+      .recipes-drinkes-container ol li ul li ul {
+          font-size: 24px;
+          margin: 20px 0px 20px 40px;
+      }
+      
+      .recipes-drinkes-container ol li ul li ul li {
+          margin-bottom: 10px;
+      }
+      
+      .recipes-closing-container {
+        margin: 20px 50px 20px 50px;
+        padding: 20px;
+      }
+      
+      .recipes-closing-container img {
+          width: 80%;
+          height: auto;
+          margin-left: 50px;
+      }
+      
+      .recipes-closing-container p {
+          font-size: 26px;
+          padding: 10px;
+          text-align: center;
+          align-items: center;
+      }
+}
