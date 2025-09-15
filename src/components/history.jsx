@@ -1,21 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./History.css"
 
 
 function History() {
+    
     return (
         <div className="history-container">
-
-
+    
         <div className="history-hero-container">
             <img src="/coffee-lovers/photos/historyherosection.jpg" alt="Ethiopian coffee farmer" />
             <h1>From Wild Berries to Global Ritual: The Journey of Coffee</h1>
             <p>Coffee’s history is as rich and complex as its flavor. From mystical legends to cultural revolutions, discover how this humble bean shaped the world.</p>
         </div> 
 
-        <div>
+        <div className="history-timeline-container">
             <h1>The Timeline of Coffee</h1>
-            <div>
+            <div className="shared-timeline">
                 <h2>9th Century - Ethiopia: The First Discovery</h2>
                 <ul>
                     <li><strong>Legend of Kaldi:</strong> An Ethiopian goat herder notices his goats dancing with unusual energy after eating red coffee cherries. Curious, he tries them himself.</li>
@@ -23,7 +23,7 @@ function History() {
                     <li><strong>Cultural Roots:</strong> The region of Kaffa is believed to give “coffee” its name. Coffee becomes part of Ethiopian oral tradition and hospitality rituals, including the beginnings of the Ethiopian coffee ceremony.</li>
                 </ul>
             </div>
-            <div>
+            <div className="shared-timeline">
                 <h2>15th Century - Yemen: The Birth of Brewing</h2>
                 <ul>
                     <li>Coffee crosses the Red Sea into Yemen, where Sufi monks begin brewing it as a hot drink to sustain long nights of prayer and meditation.</li>
@@ -31,7 +31,7 @@ function History() {
                     <li>Coffee’s identity shifts — from berry snack to spiritual beverage.</li>
                 </ul>
             </div>
-            <div>
+            <div className="shared-timeline">
                 <h2>16th Century - Ottoman Empire: Coffeehouses Emerge</h2>
                 <ul>
                     <li>Coffee reaches Istanbul (1555), carried by Ottoman traders.</li>
@@ -40,7 +40,7 @@ function History() {
                     <li>Authorities try to ban coffeehouses at times, fearing their political influence — but the bans never last, showing coffee’s unstoppable popularity.</li>
                 </ul>
             </div>
-            <div>
+            <div className="shared-timeline">
                 <h2>17th Century - Europe: Coffee Meets Controversy</h2>
                 <ul>
                     <li>Coffee arrives in Venice (1615) via trade with the Ottomans.</li>
@@ -55,7 +55,7 @@ function History() {
                     </li>
                 </ul>
             </div>
-            <div>
+            <div className="shared-timeline">
                 <h2>18th Century - Colonial Expansion & Global Spread</h2>
                 <ul>
                     <li>
@@ -70,7 +70,7 @@ function History() {
                     <li>Coffee becomes deeply tied to colonialism and slavery, shaping entire economies and societies.</li>
                 </ul>
             </div>
-            <div>
+            <div className="shared-timeline">
                 <h2>19th Century - Revolution & Industry</h2>
                 <ul>
                     <li>
@@ -86,7 +86,7 @@ function History() {
                     <li>Paris cafés inspire artists, poets, and intellectuals like Voltaire and Balzac, who famously consumed excessive amounts of coffee while writing.</li>
                 </ul>
             </div>
-            <div>
+            <div className="shared-timeline">
                 <h2>20th Century - Coffee Reinvented</h2>
                 <ul>
                     <li><strong>1901:</strong> Instant coffee is invented.</li>
@@ -95,7 +95,7 @@ function History() {
                     <li>Coffee becomes a modern commodity — global brands rise, especially Starbucks, spreading café culture worldwide.</li>
                 </ul>
             </div>
-            <div>
+            <div className="shared-timeline">
                 <h2>21st Century - Coffee Today</h2>
                 <ul>
                     <li>Coffee is cultivated in 70+ countries.</li>
@@ -114,7 +114,7 @@ function History() {
             </div>
         </div>
    
-            <div>
+            <div className="darkside-of-history-container">
                 <h1>Colonialism & Coffee’s Dark Side</h1>
                 <ul>
                     <li>Coffee’s spread tied to European colonial powers.</li>
@@ -123,8 +123,8 @@ function History() {
                 </ul>
             </div>
 
-            <div>
-                <p>“From ancient rituals to modern cafés, coffee is more than a drink — it’s a shared human story.”</p>
+            <div className="history-closing-container">
+                <p>“From ancient rituals to modern cafés, coffee is more than a drink - it’s a shared human story.”</p>
             </div>
 
 

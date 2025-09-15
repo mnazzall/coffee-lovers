@@ -1,0 +1,343 @@
+.history-container {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.history-hero-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 180px 20px 180px;
+  padding: 40px;
+  background-color: whitesmoke;
+  border-radius: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.history-hero-container img {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 50px;
+
+}
+
+.history-hero-container h1 {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 36px;
+    padding: 20px;
+}
+
+.history-hero-container p {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 26px;
+    font-weight: 500;
+    color: black;
+
+}
+
+.history-timeline-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 180px 20px 180px;
+  padding: 40px;
+  background-color: whitesmoke;
+  border-radius: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.history-timeline-container h1 {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 36px;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+.shared-timeline {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.shared-timeline h2 {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 32px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.shared-timeline ul {
+    font-family: "Times New Roman", Times, serif;
+  font-size: 24px;
+  color: black;
+  font-weight: 500;
+  text-align: left;
+  margin-left: 70px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.shared-timeline ul li {
+    margin-bottom: 10px;
+}
+
+.shared-timeline ul li ul {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 22px;
+  color: black;
+  font-weight: 500;
+  text-align: left;
+  margin-left: 70px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.shared-timeline ul li ul li {
+    margin-bottom: 10px;
+}
+
+.darkside-of-history-container {
+  display: flex;
+  flex-direction: column;
+
+  margin: 20px 180px 20px 180px;
+  padding: 40px;
+  background-color: whitesmoke;
+  border-radius: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.darkside-of-history-container h1 {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 36px;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+.darkside-of-history-container ul {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 24px;
+  color: black;
+  font-weight: 500;
+  text-align: left;
+  margin-left: 100px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.darkside-of-history-container ul li {
+    margin-bottom: 12px;
+}
+
+.history-closing-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 180px 80px 180px;
+  padding: 40px;
+  background-color: whitesmoke;
+  border-radius: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.history-closing-container p {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 27px;
+    font-weight: 500;
+    color: black;
+}
+
+
+@media screen and (max-width: 768px) {
+    .history-hero-container {
+        margin: 20px 20px 20px 20px;
+        padding: 10px;
+      }
+      
+      .history-hero-container img {
+          width: 90%;
+          height: auto;
+      
+      }
+      
+      .history-hero-container h1 {
+          font-size: 28px;
+          padding: 20px;
+      }
+      
+      .history-hero-container p {
+          font-family: "Times New Roman", Times, serif;
+          font-size: 20px;
+      }
+      
+      .history-timeline-container {
+        margin: 20px 20px 20px 20px;
+        padding: 10px;
+      }
+      
+      .history-timeline-container h1 {
+          font-size: 28px;
+          padding: 20px;
+          margin-bottom: 20px;
+      }
+      
+      .shared-timeline h2 {
+          font-size: 26px;
+          padding: 20px;
+          margin-top: 20px;
+      }
+      
+      .shared-timeline ul {
+        font-size: 20px;
+        margin-left: 30px;
+        margin-bottom: 15px;
+        margin-top: 15px;
+      }
+      
+      .shared-timeline ul li {
+          margin-bottom: 10px;
+      }
+      
+      .shared-timeline ul li ul {
+        font-size: 18px;
+        margin-left: 30px;
+        margin-bottom: 15px;
+        margin-top: 15px;
+      }
+      
+      .shared-timeline ul li ul li {
+          margin-bottom: 10px;
+      }
+      
+      .darkside-of-history-container {
+        margin: 20px 20px 20px 20px;
+        padding: 10px;
+      }
+      
+      .darkside-of-history-container h1 {
+          font-size: 28px;
+          padding: 20px;
+      }
+      
+      .darkside-of-history-container ul {
+        font-size: 22px;
+        margin-left: 50px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+      }
+      
+      .darkside-of-history-container ul li {
+          margin-bottom: 10px;
+      }
+      
+      .history-closing-container {
+        margin: 20px 20px 50px 20px;
+        padding: 25px;
+      }
+      
+      .history-closing-container p {
+          font-size: 23px;
+      }
+}
+
+
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .history-hero-container {
+        margin: 20px 50px 20px 50px;
+        padding: 15px;
+      }
+      
+      .history-hero-container img {
+          width: 75%;
+          height: auto;
+      
+      }
+      
+      .history-hero-container h1 {
+          font-size: 36px;
+          padding: 20px;
+      }
+      
+      .history-hero-container p {
+          font-size: 24px;
+      }
+      
+      .history-timeline-container {
+        margin: 20px 50px 20px 50px;
+        padding: 15px;
+      }
+      
+      .history-timeline-container h1 {
+          font-size: 36px;
+          padding: 20px;
+          margin-bottom: 20px;
+      }
+      
+      .shared-timeline h2 {
+          font-size: 28px;
+          padding: 20px;
+          margin-top: 20px;
+      }
+      
+      .shared-timeline ul {
+        font-size: 24px;
+        margin-left: 40px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+      }
+      
+      .shared-timeline ul li {
+          margin-bottom: 10px;
+      }
+      
+      .shared-timeline ul li ul {
+        font-size: 22px;
+        margin-left: 40px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+      }
+      
+      .shared-timeline ul li ul li {
+          margin-bottom: 10px;
+      }
+      
+      .darkside-of-history-container {
+        margin: 20px 50px 20px 50px;
+        padding: 10px;
+      }
+      
+      .darkside-of-history-container h1 {
+          font-size: 36px;
+          padding: 20px;
+      }
+      
+      .darkside-of-history-container ul {
+        font-size: 24px;
+        margin-left: 50px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+      }
+      
+      .darkside-of-history-container ul li {
+          margin-bottom: 10px;
+      }
+      
+      .history-closing-container {
+        margin: 20px 50px 60px 50px;
+        padding: 25px;
+      }
+      
+      .history-closing-container p {
+          font-size: 26px;
+      }
+}
