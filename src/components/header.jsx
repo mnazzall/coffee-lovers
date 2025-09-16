@@ -4,6 +4,7 @@ import "./header.css";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
 
   function toggleNav() {
     setIsOpen(!isOpen);
@@ -11,6 +12,11 @@ function Header() {
 
   function closeNav() {
     setIsOpen(false);
+    setDropdownOpen(false);
+  }
+
+  function toggleDropdown() {
+    setDropdownOpen(!dropdownOpen);
   }
 
   return (
@@ -38,24 +44,67 @@ function Header() {
         </button>
         <ul className="nav-list">
           <li>
-            <Link to="/" onClick={() => setIsOpen(false)}>
+            <Link to="/" onClick={closeNav}>
               Home
             </Link>
           </li>
           <li>
-            <Link to="/about" onClick={() => setIsOpen(false)}>
+            <Link to="/about" onClick={closeNav}>
               About
             </Link>
           </li>
-          <li>
-            <Link to="/BeansAndVarieties" onClick={() => setIsOpen(false)}>
-              Beans & Varieties
-            </Link>
-          </li>
-          <li>
-            <Link to="/contact" onClick={() => setIsOpen(false)}>
-              Contact
-            </Link>
+
+          <li className={`dropdown ${dropdownOpen ? "open" : ""}`}>
+            <button className="dropdown-toggle" onClick={toggleDropdown}>
+              Coffee Knowledge ▾
+            </button>
+            <ul className="dropdown-menu">
+              <li>
+                <Link to="/History" onClick={closeNav}>
+                  Origins & Early History
+                </Link>
+              </li>
+              <li>
+                <Link to="/BeansAndVarieties" onClick={closeNav}>
+                  Beans & Varieties
+                </Link>
+              </li>
+              <li>
+                <Link to="/BrewingMethods" onClick={closeNav}>
+                  Brewing Methods
+                </Link>
+              </li>
+              <li>
+                <Link to="/RoastingLevels" onClick={closeNav}>
+                Roasting Levels
+                </Link>
+              </li>
+              <li>
+                <Link to="/Culture" onClick={closeNav}>
+                  Coffee Culture
+                </Link>
+              </li>
+              <li>
+                <Link to="/HealthAndBenefits" onClick={closeNav}>
+                  Health & Benefits
+                </Link>
+              </li>
+              <li>
+                <Link to="/Recipes" onClick={closeNav}>
+                  Coffee Recipes
+                </Link>
+              </li>
+              <li>
+                <Link to="/AroundTheWorld" onClick={closeNav}>
+                  Around the World
+                </Link>
+              </li>
+              <li>
+                <Link to="/SustainabilityAndTrade" onClick={closeNav}>
+                  Sustainability & Trade
+                </Link>
+              </li>
+            </ul>
           </li>
         </ul>
       </nav>

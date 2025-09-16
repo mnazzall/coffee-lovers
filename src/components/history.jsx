@@ -27,7 +27,7 @@ function History() {
                 <h2>15th Century - Yemen: The Birth of Brewing</h2>
                 <ul>
                     <li>Coffee crosses the Red Sea into Yemen, where Sufi monks begin brewing it as a hot drink to sustain long nights of prayer and meditation.</li>
-                    <li><srong>Mocha Port:</srong> Yemen becomes the first hub of international coffee trade. The port city of Mocha gives its name to the famous “mocha coffee.”</li>
+                    <li><strong>Mocha Port:</strong> Yemen becomes the first hub of international coffee trade. The port city of Mocha gives its name to the famous “mocha coffee.”</li>
                     <li>Coffee’s identity shifts — from berry snack to spiritual beverage.</li>
                 </ul>
             </div>
