@@ -84,7 +84,7 @@ function Home() {
   const [galleryWidth, setGalleryWidth] = useState(0);
   const galleryRef = useRef(null);
 
-  // ✅ Measure category card width
+
   useEffect(() => {
     const updateWidth = () => {
       if (cardRef.current) {
@@ -92,12 +92,12 @@ function Home() {
       }
     };
 
-    updateWidth(); // run on mount
+    updateWidth(); 
     window.addEventListener("resize", updateWidth);
     return () => window.removeEventListener("resize", updateWidth);
   }, []);
 
-  // ✅ Measure gallery image width
+
   useEffect(() => {
     const updateWidth = () => {
       if (galleryRef.current) {
@@ -105,12 +105,12 @@ function Home() {
       }
     };
 
-    updateWidth(); // run on mount
+    updateWidth(); 
     window.addEventListener("resize", updateWidth);
     return () => window.removeEventListener("resize", updateWidth);
   }, []);
 
-  // ✅ Auto-move Categories Carousel
+
   useEffect(() => {
     const interval = setInterval(() => {
       setOffset((prev) => (prev + 1) % categories.length);
@@ -118,7 +118,7 @@ function Home() {
     return () => clearInterval(interval);
   }, []);
 
-  // ✅ Auto-move Gallery Slider
+
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrent((prev) => (prev + 1) % images.length);
@@ -249,125 +249,9 @@ function Home() {
           ))}
         </div>
 
-        <div className="gallery-button-container">
-          <Link to="/Gallery">
-            <button className="learn-more-button">View Full Gallery</button>
-          </Link>
-        </div>
+        
       </div>
 
-      
-      {/* <div className="coffee-varieties-section">
-        <h1>Coffee Varieties & Botany</h1>
-        <div>
-          <img
-            src="/coffee-lovers/photos/ArabicaAndRobusta.jpeg"
-            alt="Arabica and Robusta Coffee Beans"
-          />
-        </div>
-        <ul>
-          <li>
-            Arabica is valued for its smoother, sweeter, more aromatic profile
-            and accounts for approximately 60–80% of global coffee production.
-          </li>
-          <li>
-            Robusta offers a stronger, more bitter flavor and higher caffeine
-            content, and is generally more resilient and lower-cost.
-          </li>
-        </ul>
-      </div> */}
-
-      {/* <div className="first-section">
-        <div className="coffeeTree-img-container">
-          <img src="/coffee-lovers/photos/CoffeeTree.jpeg" alt="Coffee Tree" />
-        </div>
-        <div className="coffee-info">
-          <h1>What is coffee made of? Meet the coffee tree.</h1>
-          <br />
-          <br />
-          <p>
-            Coffee trees have range. They can be anything from small shrubs to
-            tall trees, and if they’re not pruned, they can grow to more than 30
-            feet (9 meters) high. Their veiny, waxy leaves can measure from one
-            to 16 inches in size, and their colors can range from purple to
-            yellow to dark green (the most common). Each tree is covered in
-            leaves, which grow in pairs across from each other, and the coffee
-            cherries grow along the branches. The average coffee tree produces
-            10 pounds of coffee cherries per year, or 2 pounds of green,
-            unprocessed beans.
-          </p>
-        </div>
-      </div>
-
-      <div className="second-section">
-        <h1>The lifespan of a coffee tree</h1>
-        <ul className="timeline">
-          <li>
-            <strong>100 years:</strong> How long a coffee tree can live
-          </li>
-          <li>
-            <strong>Nearly 1 year:</strong> A coffee cherry matures (after first
-            flowering)
-          </li>
-          <li>
-            <strong>3 years:</strong> A coffee tree begins producing cherries
-            (approximately)
-          </li>
-          <li>
-            <strong>5 years:</strong> A coffee tree reaches full cherry
-            production
-          </li>
-          <li>
-            <strong>7-20 years:</strong> The time when a coffee tree is
-            generally most productive
-          </li>
-        </ul>
-      </div>
-
-      <div className="third-section">
-        <div className="coffeeInside-text">
-          <h1>Inside the coffee cherry</h1>
-          <p>
-            While the characteristics of different coffee trees can vary widely,
-            their cherries share a similar structure – and each part plays a
-            role in the coffee you drink.
-          </p>
-        </div>
-        <div className="coffeeInside-img-container">
-          <img
-            src="/coffee-lovers/photos/coffeeInside.jpeg"
-            alt="Coffee Cherry Diagram"
-          />
-        </div>
-        <div className="coffeeInside-info">
-          <ul>
-            <li>
-              <strong>Outer skin (exocarp):</strong> The outermost layer of the
-              coffee cherry. It is generally thin and smooth, and as it ripens,
-              it transitions from green to yellow to red.
-            </li>
-            <li>
-              <strong>Pulp (mesocarp):</strong> The juicy pulp around the coffee
-              beans. This layer gives the cherry its sweetness, contributing to
-              the overall flavor profile.
-            </li>
-            <li>
-              <strong>Parchment (endocarp):</strong> A thin layer that covers
-              and protects the beans as they develop within the cherry.
-            </li>
-            <li>
-              <strong>Silver skin (testa, epidermis):</strong> The outer layer
-              of the bean. This tissue supports the bean in its early
-              development.
-            </li>
-            <li>
-              <strong>Bean (endosperm):</strong> The core of the coffee bean. It
-              contains carbohydrates, proteins, and lipids that influence the
-              flavor and aroma of the coffee beans when brewed.
-            </li>
-          </ul>
-        </div>
-      </div> */}
     </div>
   );
 }

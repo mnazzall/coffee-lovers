@@ -1,0 +1,717 @@
+.SustainabilityAndTrade-container {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.sustainabilityi-intro-container {
+    display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 180px 20px 180px;
+  padding: 40px;
+  background-color: whitesmoke;
+  border-radius: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sustainabilityi-intro-container img {
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 50px;
+  }
+  
+  .sustainabilityi-intro-container h1 {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 36px;
+    padding: 20px;
+  }
+  
+  .sustainabilityi-intro-container p {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 24px;
+    font-weight: 500;
+    color: black;
+  }
+
+  .Environmental-Sustainability-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    
+    margin: 20px 180px 20px 180px;
+    padding: 40px;
+    background-color: whitesmoke;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .Environmental-Sustainability-container h1 {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 36px;
+    padding: 20px;
+    align-items: center;
+  }
+  
+  .Environmental-Sustainability-container p {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 26px;
+    font-weight: 500;
+    color: black;
+    align-items: center;
+  }
+
+  .Environmental-Sustainability-container h5{
+    font-family: "Times New Roman", Times, serif;
+    font-size: 26px;
+    font-weight: 600;
+    color: black;
+    text-align: left;
+    margin: 15px 0px 15px 50px;
+  }
+
+  .Environmental-Sustainability-container ul {
+    font-family: "Times New Roman", Times, serif;
+  font-size: 26px;
+  color: black;
+  font-weight: 500;
+  text-align: left;
+  margin: 15px 0px 15px 90px;
+  }
+
+  .Environmental-Sustainability-container ul li {
+    margin-bottom: 10px;
+  }
+
+  .Ethical-Sourcing-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 20px 180px 20px 180px;
+    padding: 40px;
+    background-color: whitesmoke;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .Ethical-Sourcing-container img  {
+    width: 70%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 50px;  
+  }
+
+  .Ethical-Sourcing-container h1 {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 36px;
+    padding: 20px;
+  }
+
+  .Ethical-Sourcing-container p {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 26px;
+    font-weight: 500;
+    color: black;
+  }
+
+  .Ethical-Sourcing-container ul {
+    font-family: "Times New Roman", Times, serif;
+  font-size: 24px;
+  color: black;
+  font-weight: 500;
+  text-align: left;
+  margin: 30px 280px 15px 20px;
+  }
+
+  .Ethical-Sourcing-container ul li {
+    margin-bottom: 10px;
+  }
+
+  .Economic-Impact-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 180px 20px 180px;
+    padding: 40px;
+    background-color: whitesmoke;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .Economic-Impact-container h1 {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 36px;
+    padding: 20px;
+  }
+
+  .Economic-Impact-container p {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 26px;
+    font-weight: 500;
+    color: black;
+  }
+
+  .Economic-Impact-container ul {
+    font-family: "Times New Roman", Times, serif;
+  font-size: 24px;
+  color: black;
+  font-weight: 500;
+  text-align: left;
+  margin: 30px 100px 15px 20px;
+  }
+
+  .Economic-Impact-container ul li {
+    margin-bottom: 10px;
+  }
+
+  .Global-Coffee-Trade-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 180px 20px 180px;
+    padding: 40px;
+    background-color: whitesmoke;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .Global-Coffee-Trade-container h1 {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 36px;
+    padding: 20px;
+  }
+
+  .Global-Coffee-Trade-container p {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 26px;
+    font-weight: 500;
+    color: black;
+  }
+
+  .Global-Coffee-Trade-container ol {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 24px;
+    color: black;
+    font-weight: 500;
+    text-align: left;
+    margin: 20px 50px 20px 60px;
+  }
+
+  .Global-Coffee-Trade-container ol li {
+    margin-bottom: 10px;
+  }
+
+  .Certifications-Labels-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 180px 20px 180px;
+    padding: 40px;
+    background-color: whitesmoke;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .Certifications-Labels-container h1 {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 36px;
+    padding: 20px;
+  }
+
+  .Certifications-Labels-container p {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 26px;
+    font-weight: 500;
+    color: black;
+  }
+
+
+  .Certifications-Labels-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .Certifications-Labels-container caption {
+    caption-side: top;
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    letter-spacing: 1px;
+  }
+  
+  .Certifications-Labels-container th,
+  .Certifications-Labels-container td {
+    border: 1px solid #ddd;
+    padding: 16px;
+    text-align: center;
+  }
+  
+  .Certifications-Labels-container th {
+    background-color: #6f4e37;
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 24px;
+  }
+  
+  .Certifications-Labels-container td {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+  }
+  
+  .Certifications-Labels-container tr:hover {
+    background-color: #ddd;
+  }
+
+  .Consumer-Tips-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 180px 20px 180px;
+    padding: 40px;
+    background-color: whitesmoke;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .Consumer-Tips-container h1 {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 36px;
+    padding: 20px;
+  }
+
+  .Consumer-Tips-container ul {
+    font-family: "Times New Roman", Times, serif;
+  font-size: 26px;
+  color: black;
+  font-weight: 500;
+  text-align: left;
+  margin: 30px 200px 15px 20px;
+  }
+
+  .Consumer-Tips-container ul li {
+    margin-bottom: 10px;
+  }
+
+  .sustainability-Conclusion-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 180px 80px 180px;
+    padding: 40px;
+    background-color: whitesmoke;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .sustainability-Conclusion-container h1 {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 36px;
+    padding: 20px;
+  }
+
+  .sustainability-Conclusion-container p {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 26px;
+    font-weight: 500;
+    color: black;
+  }
+
+
+
+
+  @media screen and (max-width: 768px) {
+
+    .sustainabilityi-intro-container {
+      margin: 20px 20px 20px 20px;
+      padding: 10px;
+    }
+    
+    .sustainabilityi-intro-container img {
+        width: 100%;
+        height: auto;
+      }
+      
+      .sustainabilityi-intro-container h1 {
+        font-size: 28px;
+        padding: 20px;
+      }
+      
+      .sustainabilityi-intro-container p {
+        font-size: 20px;
+        padding: 10px;
+      }
+    
+      .Environmental-Sustainability-container {
+        margin: 20px 20px 20px 20px;
+        padding: 10px;
+      }
+    
+      .Environmental-Sustainability-container h1 {
+        font-size: 28px;
+        align-items: center;
+      }
+      
+      .Environmental-Sustainability-container p {
+        font-size: 22px;
+        align-items: center;
+      }
+    
+      .Environmental-Sustainability-container h5{
+        font-size: 24px;
+        margin: 15px 0px 15px 10px;
+      }
+    
+      .Environmental-Sustainability-container ul {
+      font-size: 22px;
+      margin: 15px 0px 15px 40px;
+      }
+    
+      .Environmental-Sustainability-container ul li {
+        margin-bottom: 10px;
+      }
+    
+      .Ethical-Sourcing-container {
+        margin: 20px 20px 20px 20px;
+        padding: 10px;
+      }
+    
+      .Ethical-Sourcing-container img  {
+        width: 100%;
+        height: auto;  
+      }
+    
+      .Ethical-Sourcing-container h1 {
+        font-size: 28px;
+        padding: 20px;
+      }
+    
+      .Ethical-Sourcing-container p {
+        font-size: 24px;
+      }
+    
+      .Ethical-Sourcing-container ul {
+      font-size: 22px;
+      margin: 20px 0px 15px 30px;
+      }
+    
+      .Ethical-Sourcing-container ul li {
+        margin-bottom: 10px;
+      }
+    
+      .Economic-Impact-container {
+        margin: 20px 20px 20px 20px;
+        padding: 10px;
+      }
+    
+      .Economic-Impact-container h1 {
+        font-size: 28px;
+        padding: 20px;
+      }
+    
+      .Economic-Impact-container p {
+        font-size: 24px;
+      }
+    
+      .Economic-Impact-container ul {
+      font-size: 22px;
+      margin: 20px 0px 15px 30px;
+      }
+    
+      .Economic-Impact-container ul li {
+        margin-bottom: 10px;
+      }
+    
+      .Global-Coffee-Trade-container {
+        margin: 20px 20px 20px 20px;
+        padding: 10px;
+      }
+    
+      .Global-Coffee-Trade-container h1 {
+        font-size: 28px;
+        padding: 20px;
+      }
+    
+      .Global-Coffee-Trade-container p {
+        font-size: 22px;
+      }
+    
+      .Global-Coffee-Trade-container ol {
+        font-size: 22px;
+        margin: 20px 0px 20px 40px;
+      }
+    
+      .Global-Coffee-Trade-container ol li {
+        margin-bottom: 8px;
+      }
+    
+      .Certifications-Labels-container {
+        margin: 20px 20px 20px 20px;
+        padding: 20px;
+        overflow-x: auto;
+      }   
+    
+      .Certifications-Labels-container h1 {
+        font-size: 28px;
+        padding: 20px;
+      }
+    
+      .Certifications-Labels-container p {
+        font-size: 22px;
+      }
+      
+      .Certifications-Labels-container th,
+      .Certifications-Labels-container td {
+        padding: 10px;
+      }
+      
+      .Certifications-Labels-container th {
+        font-size: 22px;
+      }
+      
+      .Certifications-Labels-container td {
+        font-size: 19px;
+      }
+
+      .Consumer-Tips-container {
+        margin: 20px 20px 20px 20px;
+        padding: 10px;
+      }
+    
+      .Consumer-Tips-container h1 {
+        font-size: 28px;
+        padding: 20px;
+      }
+    
+      .Consumer-Tips-container ul {
+      font-size: 22px;
+      margin: 20px 5px 15px 30px;
+      }
+    
+      .Consumer-Tips-container ul li {
+        margin-bottom: 10px;
+      }
+    
+      .sustainability-Conclusion-container {
+        margin: 20px 20px 60px 20px;
+        padding: 10px;
+      }
+    
+      .sustainability-Conclusion-container h1 {
+        font-size: 28px;
+        padding: 20px;
+      }
+    
+      .sustainability-Conclusion-container p {
+        font-size: 22px;
+        padding: 10px;
+      }  
+  }
+
+
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+
+
+    .sustainabilityi-intro-container {
+        margin: 20px 50px 20px 50px;
+        padding: 30px;
+      }
+      
+      .sustainabilityi-intro-container img {
+          width: 90%;
+          height: auto;
+        }
+        
+        .sustainabilityi-intro-container h1 {
+          font-size: 36px;
+          padding: 20px;
+        }
+        
+        .sustainabilityi-intro-container p {
+          font-size: 24px;
+          padding: 10px;
+        }
+      
+        .Environmental-Sustainability-container {
+          margin: 20px 50px 20px 50px;
+          padding: 20px;
+        }
+      
+        .Environmental-Sustainability-container h1 {
+          font-size: 36px;
+          align-items: center;
+        }
+        
+        .Environmental-Sustainability-container p {
+          font-size: 24px;
+          align-items: center;
+        }
+      
+        .Environmental-Sustainability-container h5{
+          font-size: 24px;
+          margin: 15px 0px 15px 10px;
+        }
+      
+        .Environmental-Sustainability-container ul {
+        font-size: 24px;
+        margin: 15px 0px 15px 40px;
+        }
+      
+        .Environmental-Sustainability-container ul li {
+          margin-bottom: 10px;
+        }
+      
+        .Ethical-Sourcing-container {
+          margin: 20px 50px 20px 50px;
+          padding: 30px;
+        }
+      
+        .Ethical-Sourcing-container img  {
+          width: 100%;
+          height: auto;  
+        }
+      
+        .Ethical-Sourcing-container h1 {
+          font-size: 36px;
+          padding: 20px;
+        }
+      
+        .Ethical-Sourcing-container p {
+          font-size: 26px;
+        }
+      
+        .Ethical-Sourcing-container ul {
+        font-size: 24px;
+        margin: 20px 0px 15px 30px;
+        }
+      
+        .Ethical-Sourcing-container ul li {
+          margin-bottom: 10px;
+        }
+      
+        .Economic-Impact-container {
+          margin: 20px 50px 20px 50px;
+          padding: 30px;
+        }
+      
+        .Economic-Impact-container h1 {
+          font-size: 36px;
+          padding: 20px;
+        }
+      
+        .Economic-Impact-container p {
+          font-size: 26px;
+        }
+      
+        .Economic-Impact-container ul {
+        font-size: 24px;
+        margin: 20px 0px 15px 30px;
+        }
+      
+        .Economic-Impact-container ul li {
+          margin-bottom: 10px;
+        }
+      
+        .Global-Coffee-Trade-container {
+          margin: 20px 50px 20px 50px;
+          padding: 30px;
+        }
+      
+        .Global-Coffee-Trade-container h1 {
+          font-size: 36px;
+          padding: 20px;
+        }
+      
+        .Global-Coffee-Trade-container p {
+          font-size: 24px;
+        }
+      
+        .Global-Coffee-Trade-container ol {
+          font-size: 22px;
+          margin: 20px 0px 20px 40px;
+        }
+      
+        .Global-Coffee-Trade-container ol li {
+          margin-bottom: 10px;
+        }
+      
+        .Certifications-Labels-container {
+          margin: 20px 50px 20px 50px;
+          padding: 30px;
+        }   
+      
+        .Certifications-Labels-container h1 {
+          font-size: 36px;
+          padding: 20px;
+        }
+      
+        .Certifications-Labels-container p {
+          font-size: 24px;
+        }
+        
+        .Certifications-Labels-container th,
+        .Certifications-Labels-container td {
+          padding: 14px;
+        }
+        
+        .Certifications-Labels-container th {
+          font-size: 24px;
+        }
+        
+        .Certifications-Labels-container td {
+          font-size: 22px;
+        }
+  
+        .Consumer-Tips-container {
+          margin: 20px 50px 20px 50px;
+          padding: 30px;
+        }
+      
+        .Consumer-Tips-container h1 {
+          font-size: 36px;
+          padding: 20px;
+        }
+      
+        .Consumer-Tips-container ul {
+        font-size: 24px;
+        margin: 20px 5px 15px 30px;
+        }
+      
+        .Consumer-Tips-container ul li {
+          margin-bottom: 10px;
+        }
+      
+        .sustainability-Conclusion-container {
+          margin: 20px 50px 70px 50px;
+          padding: 30px;
+        }
+      
+        .sustainability-Conclusion-container h1 {
+          font-size: 36px;
+          padding: 20px;
+        }
+      
+        .sustainability-Conclusion-container p {
+          font-size: 24px;
+          padding: 10px;
+        } 
+  }
