@@ -1,0 +1,352 @@
+.around-the-world-container {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.aroundtheworld-intro-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 180px 20px 180px;
+  padding: 40px;
+  background-color: whitesmoke;
+  border-radius: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.aroundtheworld-intro-container img {
+  width: 80%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 50px;
+}
+
+.aroundtheworld-intro-container h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 36px;
+  padding: 20px;
+}
+
+.aroundtheworld-intro-container p {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 26px;
+  font-weight: 500;
+  color: black;
+}
+
+.aroundtheworld-main-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  margin: 20px 180px 20px 180px;
+  padding: 40px;
+  background-color: whitesmoke;
+  border-radius: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.world-shared-img {
+  width: 110%;
+  height: auto;
+  border-radius: 50px;
+}
+
+.world-shared-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 50px;
+}
+
+.world-shared {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.world-shared h2 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 32px;
+  color: #6f4e37;
+}
+
+.world-shared ul {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 26px;
+  color: black;
+  font-weight: 500;
+  text-align: left;
+  margin: 15px 0px 15px 20px;
+}
+
+.world-shared ul li ul {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 24px;
+  color: black;
+  font-weight: 500;
+  text-align: left;
+  margin: 15px 0px 15px 25px;
+}
+
+.world-shared ul li ul li {
+  margin-bottom: 10px;
+}
+
+.aroundtheworld-table-container {
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke;
+  border-radius: 50px;
+  margin: 20px 180px 50px 180px;
+  padding: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.aroundtheworld-table-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.aroundtheworld-table-container caption {
+  caption-side: top;
+  font-size: 2rem;
+  font-weight: bold;
+  color: black;
+  padding: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.aroundtheworld-table-container th,
+.aroundtheworld-table-container td {
+  border: 1px solid #ddd;
+  padding: 16px;
+  text-align: center;
+}
+
+.aroundtheworld-table-container th {
+  background-color: #6f4e37;
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 24px;
+}
+
+.aroundtheworld-table-container td {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+}
+
+.aroundtheworld-table-container tr:hover {
+  background-color: #ddd;
+}
+
+.aroundtheworld-closing {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 180px 80px 180px;
+  padding: 40px;
+  background-color: whitesmoke;
+  border-radius: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.aroundtheworld-closing p {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 28px;
+  font-weight: 500;
+  color: black;
+}
+
+@media screen and (max-width: 768px) {
+
+    .aroundtheworld-intro-container {
+        margin: 20px 20px 20px 20px;
+        padding: 20px;
+      }
+      
+      .aroundtheworld-intro-container img {
+        width: 100%;
+        height: auto;
+      }
+      
+      .aroundtheworld-intro-container h1 {
+        font-size: 28px;
+        padding: 20px;
+      }
+      
+      .aroundtheworld-intro-container p {
+        font-size: 20px;
+      }
+      
+      .aroundtheworld-main-container {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        margin: 20px 20px 20px 20px;
+        padding: 20px;
+      }
+      
+      .world-shared-img {
+        width: 100%;
+        height: auto;
+      }
+      
+      .world-shared-img img {
+        width: 100%;
+        height: auto;
+      }
+      
+      .world-shared h2 {
+        font-size: 30px;
+        color: #6f4e37;
+      }
+      
+      .world-shared ul {
+        font-size: 24px;
+        margin: 15px 0px 15px 20px;
+      }
+      
+      .world-shared ul li ul {
+        font-size: 22px;
+        margin: 15px 0px 15px 25px;
+      }
+      
+      .world-shared ul li ul li {
+        margin-bottom: 8px;
+      }
+      
+      .aroundtheworld-table-container {
+        margin: 20px 20px 50px 20px;
+        padding: 20px;
+        overflow-x: auto;
+      }
+      
+      .aroundtheworld-table-container caption {
+        caption-side: top;
+        text-align: left;
+        font-size: 1.5rem;
+        padding: 10px;
+        margin-bottom: 10px;
+      }
+      
+      .aroundtheworld-table-container th,
+      .aroundtheworld-table-container td {
+        padding: 10px;
+      }
+      
+      .aroundtheworld-table-container th {
+        font-size: 20px;
+      }
+      
+      .aroundtheworld-table-container td {
+        font-size: 17px;
+      }
+      
+      .aroundtheworld-closing {
+        margin: 10px 20px 70px 20px;
+        padding: 10px;
+      }
+      
+      .aroundtheworld-closing p {
+        font-size: 24px;
+      }
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .aroundtheworld-intro-container {
+        margin: 20px 50px 20px 50px;
+        padding: 30px;
+      }
+      
+      .aroundtheworld-intro-container img {
+        width: 80%;
+        height: auto;
+      }
+      
+      .aroundtheworld-intro-container h1 {
+        font-size: 36px;
+        padding: 20px;
+      }
+      
+      .aroundtheworld-intro-container p {
+        font-size: 24px;
+      }
+      
+      .aroundtheworld-main-container {
+        gap: 80px;
+        margin: 20px 50px 20px 50px;
+        padding: 20px;
+      }
+      
+      .world-shared-img {
+        width: 120%;
+        height: auto;
+      }
+      
+      .world-shared-img img {
+        width: 100%;
+        height: auto;
+        margin-top: 200px;
+      }
+      
+      .world-shared h2 {
+        font-size: 34px;
+      }
+      
+      .world-shared ul {
+        font-size: 24px;
+        margin: 15px 0px 15px 20px;
+      }
+      
+      .world-shared ul li ul {
+        font-size: 22px;
+        margin: 15px 0px 15px 25px;
+      }
+      
+      .world-shared ul li ul li {
+        margin-bottom: 10px;
+      }
+      
+      .aroundtheworld-table-container {
+        margin: 20px 50px 50px 50px;
+        padding: 30px;
+        overflow-x: auto;
+      }
+      
+      .aroundtheworld-table-container caption {
+        caption-side: top;
+        font-size: 2rem;
+        padding: 20px;
+        margin-bottom: 10px;
+      }
+      
+      .aroundtheworld-table-container th,
+      .aroundtheworld-table-container td {
+        padding: 16px;
+      }
+      
+      .aroundtheworld-table-container th {
+        font-size: 22px;
+      }
+      
+      .aroundtheworld-table-container td {
+        font-size: 20px;
+      }
+      
+      .aroundtheworld-closing {
+        margin: 20px 50px 80px 50px;
+        padding: 30px;
+      }
+      
+      .aroundtheworld-closing p {
+        font-size: 26px;
+      }
+}
